@@ -84,49 +84,57 @@
         <div class="carac">
             <div id="tl">
                 <h3>Total remaining of skills points = <span id="calcSkillTarget"></span></h3>
-                <h4>Maximum 60pt/skill and minimum 10pt/skill.<br> Can't have a 0pt skill</h4>
+                <h4>Maximum 60pt/skill (including bonus) <br>and minimum 10pt/skill (including malus).<br> Can't have a
+                    0pt
+                    skill</h4>
             </div>
             <div id="frc">
                 <label for="frc">FRC<br>
-                    <span id="bonusClassFrc"></span><br>
-                    <span id="bonusTribFrc"></span>
+                    <p id="bonusClassFrc1" class="bonus">Class : <span id="bonusClassFrc"></span><br></p>
+                    <p id="bonusTribFrc1" class="bonus">Tribe : <span id="bonusTribFrc"></span></p>
                 </label>
                 <input id="frcValue" type="text" name="frc" value="">
+                <p>Max pt available : <span id="maxPtAvailableFrc"></span></p>
             </div>
             <div id="cst">
                 <label for="cst">CST<br>
-                    <span id="bonusClassCst"></span><br>
-                    <span id="bonusTribCst"></span>
+                    <p id="bonusClassCst1" class="bonus">Class : <span id="bonusClassCst"></span><br></p>
+                    <p id="bonusTribCst1" class="bonus">Tribe : <span id="bonusTribCst"></span></p>
                     <input id="cstValue" type="text" name="cst" value="">
+                    <p>Max pt available : <span id="maxPtAvailableFrc"></span></p>
             </div>
             <div id="int">
                 <label for="int">INT<br>
-                    <span id="bonusClassInt"></span><br>
-                    <span id="bonusTribInt"></span>
+                    <p id="bonusClassInt1" class="bonus">Class : <span id="bonusClassInt"></span><br></p>
+                    <p id="bonusTribInt1" class="bonus">Tribe : <span id="bonusTribInt"></span></p>
                     <input id="intValue" type="text" name="int" value="">
+                    <p>Max pt available : <span id="maxPtAvailableInt"></span></p>
             </div>
             <div id="agi">
                 <label for="agi">AGI<br>
-                    <span id="bonusClassAgi"></span><br>
-                    <span id="bonusTribAgi"></span>
+                    <p id="bonusClassAgi1" class="bonus">Class : <span id="bonusClassAgi"></span><br></p>
+                    <p id="bonusTribAgi1" class="bonus">Tribe : <span id="bonusTribAgi"></span></p>
                     <input id="agiValue" type="text" name="agi" value="">
+                    <p>Max pt available : <span id="maxPtAvailableAgi"></span></p>
             </div>
             <div id="vit">
                 <label for="vit">VIT<br>
-                    <span id="bonusClassVit"></span><br>
-                    <span id="bonusTribVit"></span>
+                    <p id="bonusClassVit1" class="bonus">Class : <span id="bonusClassVit"></span><br></p>
+                    <p id="bonusTribVit1" class="bonus">Tribe : <span id="bonusTribVit"></span></p>
                     <input id="vitValue" type="text" name="vit" value="">
+                    <p>Max pt available : <span id="maxPtAvailableVit"></span></p>
             </div>
             <div id="pcp">
                 <label for="pcp">PCP<br>
-                    <span id="bonusClassPcp"></span><br>
-                    <span id="bonusTribPcp"></span>
+                    <p id="bonusClassPcp1" class="bonus">Class : <span id="bonusClassPcp"></span><br></p>
+                    <p id="bonusTribPcp1" class="bonus">Tribe : <span id="bonusTribPcp"></span></p>
                     <input id="pcpValue" type="text" name="pcp" value="">
+                    <p>Max pt available : <span id="maxPtAvailablePcp"></span></p>
             </div>
             <div id="chc">
                 <label for="chc">CHC (auto-gen)<br>
-                    <span id="bonusClassChc"></span><br>
-                    <span id="bonusTribChc"></span>
+                    <p id="bonusClassChc1" class="bonus">Class : <span id="bonusClassChc"></span><br></p>
+                    <p id="bonusTribChc1" class="bonus">Tribe : <span id="bonusTribChc"></span></p>
                     <span id="chcValue"></span>
             </div>
             <input id="check" type="button" name="verifier" value="Vérifier">

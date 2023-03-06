@@ -29,10 +29,15 @@ const attribution = (Valbonus, Car1, Car2) => {
   const skill = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"];
   for (let i = 0; i < 7; i++) {
     if (i == Car1 || i == Car2) {
-      document.querySelector(`#bonusClass${skill[i]}`).innerHTML =
-        "Class Bonus +" + Valbonus;
+      document
+        .querySelector(`#bonusClass${skill[i]}1`)
+        .classList.replace("hideText", "bonus");
+      document.querySelector(`#bonusClass${skill[i]}`).innerHTML = Valbonus;
     } else {
-      document.querySelector(`#bonusClass${skill[i]}`).innerHTML = "";
+      document
+        .querySelector(`#bonusClass${skill[i]}1`)
+        .classList.replace("bonus", "hideText");
+      document.querySelector(`#bonusClass${skill[i]}`).innerHTML = 0;
     }
   }
 };

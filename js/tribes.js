@@ -29,13 +29,26 @@ const attribution2 = (valBonus, Car1, valMalus, Car2) => {
   const skill = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"];
   for (let i = 0; i < 7; i++) {
     if (i == Car1) {
-      document.querySelector(`#bonusTrib${skill[i]}`).innerHTML =
-        "Tribe bonus :+" + valBonus;
+      document
+        .querySelector(`#bonusTrib${skill[i]}1`)
+        .classList.replace("malus", "bonus");
+      document
+        .querySelector(`#bonusTrib${skill[i]}1`)
+        .classList.remove("hideText");
+      document.querySelector(`#bonusTrib${skill[i]}`).innerHTML = valBonus;
     } else if (i == Car2) {
-      document.querySelector(`#bonusTrib${skill[i]}`).innerHTML =
-        "Tribe malus :" + valMalus;
+      document
+        .querySelector(`#bonusTrib${skill[i]}1`)
+        .classList.replace("bonus", "malus");
+      document
+        .querySelector(`#bonusTrib${skill[i]}1`)
+        .classList.remove("hideText");
+      document.querySelector(`#bonusTrib${skill[i]}`).innerHTML = valMalus;
     } else {
-      document.querySelector(`#bonusTrib${skill[i]}`).innerHTML = "";
+      document
+        .querySelector(`#bonusTrib${skill[i]}1`)
+        .classList.add("hideText");
+      document.querySelector(`#bonusTrib${skill[i]}`).innerHTML = 0;
     }
   }
 };

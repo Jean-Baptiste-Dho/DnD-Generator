@@ -1,5 +1,5 @@
 git add .
-git commit -m "trib calculation, maj git action, git job, git main, creation, modif alc_skills pour css erreur"
+git commit -m "maj jobs & tribs pour effets css bonus/malus"
 git push
 
 git add .
