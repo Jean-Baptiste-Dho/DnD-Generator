@@ -1,5 +1,5 @@
 git add .
-git commit -m "test grid - galery img"
+git commit -m "class calculation"
 git push
 
 git add .

@@ -28,20 +28,13 @@ export const test = () => {};
 classPerso.addEventListener("click", HandleBonusJobs);
 
 const attribution = (Valbonus, Car1, Car2) => {
-  const skill = [
-    "bonusFrc",
-    "bonusCst",
-    "bonusAgi",
-    "bonusVit",
-    "bonusInt",
-    "bonusPcp",
-    "bonusChc",
-  ];
+  const skill = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"];
   for (let i = 0; i < 7; i++) {
     if (i == Car1 || i == Car2) {
-      document.getElementById(skill[i]).innerHTML = "+" + Valbonus;
+      document.querySelector(`#bonusClass${skill[i]}`).innerHTML =
+        "Class Bonus +" + Valbonus;
     } else {
-      document.getElementById(skill[i]).innerHTML = "";
+      document.querySelector(`#bonusClass${skill[i]}`).innerHTML = "";
     }
   }
 };

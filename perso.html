@@ -62,12 +62,12 @@
                 <option value="bjorn">Björner</option>
                 <option value="wulwer">Wulwer</option>
                 <option value="ravner">Ravner</option>
-                <option value="Skalder">Skalder</option>
+                <option value="Skalder">Hanï</option>
             </select>
         </div>
         <div class="gender">
-            <label for="tribe">Choose your caracter's gender</label>
-            <select name="tribe" id="tribe">
+            <label for="sex">Choose your caracter's gender</label>
+            <select name="sex" id="sex">
                 <option value="bjorn">Man</option>
                 <option value="wulwer">Woman</option>
                 <option value="wulwer">Undefined</option>
@@ -78,7 +78,8 @@
             <input type="text" name="name">
             <br>
             <br>
-            <input type="button" name="button" id="genName" value="Name generator">
+            <label for="genName">Name generator <br> (caracter's gender needed)</label>
+            <input type="button" name="genName" id="genName" value="Click to generate ">
         </div>
         <div class="carac">
             <div id="tl">
@@ -86,32 +87,47 @@
                 <h4>Maximum 60pt/skill and minimum 10pt/skill.<br> Can't have a 0pt skill</h4>
             </div>
             <div id="frc">
-                <label for="frc">FRC<span id="bonusFrc"></span></label>
+                <label for="frc">FRC<br>
+                    <span id="bonusClassFrc"></span>
+                    <span id="bonusTribFrc"></span>
+                </label>
                 <input id="frcValue" type="text" name="frc" value="">
             </div>
             <div id="cst">
-                <label for="cst">CST<span id="bonusCst"></span></label>
-                <input id="cstValue" type="text" name="cst" value="">
+                <label for="cst">CST<br>
+                    <span id="bonusClassCst"></span>
+                    <span id="bonusTribCst"></span>
+                    <input id="cstValue" type="text" name="cst" value="">
             </div>
             <div id="int">
-                <label for="int">INT<span id="bonusInt"></span></label>
-                <input id="intValue" type="text" name="int" value="">
+                <label for="int">INT<br>
+                    <span id="bonusClassInt"></span>
+                    <span id="bonusTribInt"></span>
+                    <input id="intValue" type="text" name="int" value="">
             </div>
             <div id="agi">
-                <label for="agi">AGI<span id="bonusAgi"></span></label>
-                <input id="agiValue" type="text" name="agi" value="">
+                <label for="agi">AGI<br>
+                    <span id="bonusClassAgi"></span>
+                    <span id="bonusTribAgi"></span>
+                    <input id="agiValue" type="text" name="agi" value="">
             </div>
             <div id="vit">
-                <label for="vit">VIT<span id="bonusVit"></span></label>
-                <input id="vitValue" type="text" name="vit" value="">
+                <label for="vit">VIT<br>
+                    <span id="bonusClassVit"></span>
+                    <span id="bonusTribVit"></span>
+                    <input id="vitValue" type="text" name="vit" value="">
             </div>
             <div id="pcp">
-                <label for="pcp">PCP<span id="bonusPcp"></span></label>
-                <input id="pcpValue" type="text" name="pcp" value="">
+                <label for="pcp">PCP<br>
+                    <span id="bonusClassPcp"></span>
+                    <span id="bonusTribPcp"></span>
+                    <input id="pcpValue" type="text" name="pcp" value="">
             </div>
             <div id="chc">
-                <label for="chc">Your CHC (auto-gen)<span id="bonusChc"></span></label>
-                <span id="chcValue"></span>
+                <label for="chc">Your CHC (auto-gen)<br>
+                    <span id="bonusClassChc"></span>
+                    <span id="bonusTribChc"></span>
+                    <span id="chcValue"></span>
             </div>
             <input id="check" type="button" name="verifier" value="Vérifier">
             <input id="af" type="button" name="autocompleted" value="Auto-fill">
