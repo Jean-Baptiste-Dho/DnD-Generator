@@ -1,5 +1,5 @@
 git add .
-git commit -m "class calculation"
+git commit -m "trib calculation, maj git action, git job, git main, creation, modif alc_skills pour css erreur"
 git push
 
 git add .
@@ -7,3 +7,9 @@ git commit -m " "
 git push --set-upstream origin main
 
 git push --set-upstream origin branche_créée
+
+git commit --amend -m "nouveau message"
+
+git log --online
+
+git checkout n°commit

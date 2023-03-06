@@ -23,8 +23,6 @@ export let HandleBonusJobs = () => {
   }
 };
 
-export const test = () => {};
-
 classPerso.addEventListener("click", HandleBonusJobs);
 
 const attribution = (Valbonus, Car1, Car2) => {

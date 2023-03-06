@@ -6,7 +6,8 @@ import "./class1.js"; //import DEFAULT from
 import Rectangle from "./class1.js"; */
 import { handleImg } from "./img.js";
 import { calcSkill } from "./calc_skills.js";
-import { HandleBonusJobs, test } from "./job.js";
+import { HandleBonusJobs } from "./job.js";
+import { HandleBonusTribs } from "./tribes.js";
 
 handleImg();
 
@@ -14,7 +15,9 @@ calcSkill();
 
 HandleBonusJobs();
 
-test();
+HandleBonusTribs();
+
+//trib();
 /* const testClass = new Test("yvan", "dupoisson",50)
 console.log(testClass)
 

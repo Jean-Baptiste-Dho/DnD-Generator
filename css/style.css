@@ -30,3 +30,8 @@ a {
 h1, label {
     text-align: center;
 }
+
+#imgPortrait {
+    width: 200px;
+    margin: auto;
+  }
