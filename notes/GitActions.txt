@@ -1,5 +1,5 @@
 git add .
-git commit -m "maj jobs & tribs pour effets css bonus/malus"
+git commit -m "fct margin et padding des span de #carac"
 git push
 
 git add .

@@ -8,6 +8,7 @@ import { handleImg } from "./img.js";
 import { calcSkill } from "./calc_skills.js";
 import { HandleBonusJobs } from "./job.js";
 import { HandleBonusTribs } from "./tribes.js";
+import { setMarginPadding } from "./mef_span.js";
 
 handleImg();
 
@@ -16,6 +17,8 @@ calcSkill();
 HandleBonusJobs();
 
 HandleBonusTribs();
+
+setMarginPadding();
 
 //trib();
 /* const testClass = new Test("yvan", "dupoisson",50)

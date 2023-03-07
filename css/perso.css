@@ -56,7 +56,7 @@
     grid-template-rows: auto;
     grid-template-areas:
 
-    "tl tl tl tl"
+    "tl1 tl2 tl2 tl2"
     "frc cst int chc"
     "agi vit pcp chc"
     ". ck af ."
@@ -64,54 +64,49 @@
     gap: 10px;
 }
 
-#tl, #frc, #cst, #vit, #int, #pcp, #chc, #agi {
+#tl1, #tl2, #frc, #cst, #vit, #int, #pcp, #chc, #agi {
     text-align: center;
     align-self: center;
 }
 
-#tl{
-    grid-area: tl;
+#tl1{
+    grid-area: tl1;
+}
+
+#tl2{
+    grid-area: tl2;
 }
 
 #frc {
     grid-area : frc;
-    display: flex;
-    flex-direction: column;
 }
 #cst {
     grid-area : cst;
-    display: flex;
-    flex-direction: column;
+
 
 }
 #agi {
     grid-area : agi;
-    display: flex;
-    flex-direction: column;
+
 
 }
 #vit {
     grid-area : vit;
-    display: flex;
-    flex-direction: column;
+
 
 }
 #int {
     grid-area : int;
-    display: flex;
-    flex-direction: column;
+
 
 }
 #pcp {
     grid-area : pcp;
-    display: flex;
-    flex-direction: column;
+
 
 }
 #chc {
     grid-area : chc;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     align-self: center;
 
@@ -119,7 +114,7 @@
 
 #targetImg {
     width: 400px;
-    height: 400px;
+    height: 600px;
     object-fit: contain;
 }
 
