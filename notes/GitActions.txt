@@ -1,5 +1,5 @@
 git add .
-git commit -m "fct margin et padding des span de #carac"
+git commit -m "modification perso.css witdh gap. modif jobs - value. modif calc_skill - value. modif main - import. ajout remaining_pt + export. ajustement perso.html"
 git push
 
 git add .

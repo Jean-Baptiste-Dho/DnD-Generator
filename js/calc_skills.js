@@ -1,12 +1,12 @@
-export let calcSkill = () => {
-  let frc = document.querySelector("#frcValue");
-  let cst = document.querySelector("#cstValue");
-  let int = document.querySelector("#intValue");
-  let vit = document.querySelector("#vitValue");
-  let agi = document.querySelector("#agiValue");
-  let pcp = document.querySelector("#pcpValue");
+export const calcSkill = () => {
+  let frc = document.querySelector("#valueFrc");
+  let cst = document.querySelector("#valueCst");
+  let int = document.querySelector("#valueInt");
+  let vit = document.querySelector("#valueVit");
+  let agi = document.querySelector("#valueAgi");
+  let pcp = document.querySelector("#valuePcp");
   let total =
-    300 - frc.value - cst.value - int.value - vit.value - agi.value - pcp.value;
+    140 - frc.value - cst.value - int.value - vit.value - agi.value - pcp.value;
   let target = document.querySelector("#calcSkillTarget");
   if (target.innerHTML == 0) {
     target.style.color = "green";

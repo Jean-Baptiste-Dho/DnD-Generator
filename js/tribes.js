@@ -1,21 +1,27 @@
+import { handleCalcRemaining } from "./remaining_pt.js";
+
 const tribPerso = document.querySelector("#tribe");
 
 export let HandleBonusTribs = () => {
   switch (tribPerso.value) {
     case "bjorner":
-      attribution2(5, 0, -5, 4);
+      attribution2(5, 0, -5, 4, 0);
+      handleCalcRemaining();
       break;
 
     case "wulwer":
-      attribution2(5, 5, -5, 1);
+      attribution2(5, 5, -5, 1, 0);
+      handleCalcRemaining();
       break;
 
     case "ravner":
-      attribution2(5, 4, -5, 0);
+      attribution2(5, 4, -5, 0, 0);
+      handleCalcRemaining();
       break;
 
     case "hanier":
-      attribution2(10, 6, -5, 3);
+      attribution2(10, 6, -5, 3, 0);
+      handleCalcRemaining();
       break;
 
     default:
@@ -25,7 +31,7 @@ export let HandleBonusTribs = () => {
 
 tribPerso.addEventListener("click", HandleBonusTribs);
 
-const attribution2 = (valBonus, Car1, valMalus, Car2) => {
+const attribution2 = (valBonus, Car1, valMalus, Car2, valDefault) => {
   const skill = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"];
   for (let i = 0; i < 7; i++) {
     if (i == Car1) {
@@ -36,6 +42,7 @@ const attribution2 = (valBonus, Car1, valMalus, Car2) => {
         .querySelector(`#bonusTrib${skill[i]}1`)
         .classList.remove("hideText");
       document.querySelector(`#bonusTrib${skill[i]}`).innerHTML = valBonus;
+      document.querySelector(`#bonusTrib${skill[i]}`).value = valBonus;
     } else if (i == Car2) {
       document
         .querySelector(`#bonusTrib${skill[i]}1`)
@@ -44,11 +51,13 @@ const attribution2 = (valBonus, Car1, valMalus, Car2) => {
         .querySelector(`#bonusTrib${skill[i]}1`)
         .classList.remove("hideText");
       document.querySelector(`#bonusTrib${skill[i]}`).innerHTML = valMalus;
+      document.querySelector(`#bonusTrib${skill[i]}`).value = valMalus;
     } else {
       document
         .querySelector(`#bonusTrib${skill[i]}1`)
         .classList.add("hideText");
-      document.querySelector(`#bonusTrib${skill[i]}`).innerHTML = 0;
+      document.querySelector(`#bonusTrib${skill[i]}`).innerHTML = valDefault;
+      document.querySelector(`#bonusTrib${skill[i]}`).value = valDefault;
     }
   }
 };

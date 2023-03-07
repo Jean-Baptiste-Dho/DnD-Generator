@@ -1,20 +1,20 @@
 
 .containerCarac {
-    --gap : 10px;
+    --gap : 5px;
     --num-col : 5;
 
     display: grid;
     overflow: hidden;
-    grid-template-columns: repeat(var(--num-col), 15%);
+    grid-template-columns: repeat(var(--num-col), 19%);
     grid-template-rows: auto;
     grid-template-areas:
 
-    "p p jb n t"
-    "p p . g ."
-    "p p car car car"
+    "p p jb n t "
+    "p p . g . "
+    "p p car car car "
     ;
-    justify-content: space-around;
     gap: var(--gap);
+    width: 100%;
 }
 
 
