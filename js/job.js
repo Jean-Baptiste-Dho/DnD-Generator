@@ -45,6 +45,7 @@ const attribution = (Valbonus, Car1, Car2) => {
         .querySelector(`#bonusClass${skill[i]}1`)
         .classList.replace("bonus", "hideText");
       document.querySelector(`#bonusClass${skill[i]}`).value = 0;
+      document.querySelector(`#bonusClass${skill[i]}`).innerHTML = 0;
     }
   }
 };

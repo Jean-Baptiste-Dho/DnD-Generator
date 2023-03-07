@@ -15,6 +15,7 @@
     ;
     gap: var(--gap);
     width: 100%;
+
 }
 
 
@@ -62,6 +63,7 @@
     ". ck af ."
     ;
     gap: 10px;
+    justify-content: center;
 }
 
 #tl1, #tl2, #frc, #cst, #vit, #int, #pcp, #chc, #agi {
@@ -124,4 +126,8 @@
 
 #af{
     grid-area: af;
+}
+
+.noWrap{
+    white-space: nowrap;
 }
