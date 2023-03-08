@@ -1,6 +1,6 @@
 import { handleCalcRemaining } from "./remaining_pt.js";
 
-const classPerso = document.querySelector("#job");
+const classPerso = document.querySelector("#jobs");
 
 export let HandleBonusJobs = () => {
   switch (classPerso.value) {

@@ -1,5 +1,5 @@
 git add .
-git commit -m "mise en place + test liste-template"
+git commit -m "implements des templates dan sle perso.html pb de récupération des values. A voir..."
 git push
 
 git add .

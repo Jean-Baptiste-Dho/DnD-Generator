@@ -26,12 +26,12 @@
     margin: auto;
     flex-direction: column;
 }
-.job {
+#jobs {
     grid-area: jb;
     display: flex;
     flex-direction: column;
 }
-.trib {
+#tribes {
     grid-area: t;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
 }
-.gender {
+#genders {
     grid-area: g;
     display: flex;
     flex-direction: column;

@@ -10,6 +10,7 @@
 
     <!-- type="module" pour utiliser les export/import, plus obligatoire le defer, mais cumul possible -->
     <script src="./js/main.js" type="module"></script>
+    <script src="./js/render.js" type="module"></script>
 
     <title>Document</title>
 </head>
@@ -45,33 +46,13 @@
                 <option value="Valkyries-2.jpg">Valkyries-2</option>
                 <option value="Valkyries-3.webp">Valkyries-3</option>
             </select>
-            <img id="targetImg" src="" alt="Your incarnation">
+            <img id="targetImg" src="assets/default.png" alt="Your incarnation">
         </div>
-        <div class="job">
-            <label for="job">Choose your class</label>
-            <select name="job" id="job">
-                <option value="berserker">Berserker</option>
-                <option value="ranger">Ranger</option>
-                <option value="loekVol">Loeknir/Völva</option>
-                <option value="skald">Skald</option>
-            </select>
+        <div id="jobs">
         </div>
-        <div class="trib">
-            <label for="tribe">Choose your tribe</label>
-            <select name="tribe" id="tribe">
-                <option value="bjorner">Björner</option>
-                <option value="wulwer">Wulwer</option>
-                <option value="ravner">Ravner</option>
-                <option value="hanier">Hanïer</option>
-            </select>
+        <div id="tribes">
         </div>
-        <div class="gender">
-            <label for="sex">Choose your caracter's gender</label>
-            <select name="sex" id="sex">
-                <option value="bjorn">Man</option>
-                <option value="wulwer">Woman</option>
-                <option value="wulwer">Undefined</option>
-            </select>
+        <div id="genders">
         </div>
         <div class="name">
             <label for="name">Enter your name</label>
@@ -90,7 +71,6 @@
                 <span id="bonusClassFrc1" class="bonus">Class : <span id="bonusClassFrc" value=""></span></span>
                 <span id="bonusTribFrc1" class="bonus noWrap">Tribe : <span id="bonusTribFrc"
                         value=""></span></span></br>
-                </label>
                 <input id="valueFrc" type="text" name="frc">
                 <p>Available point(s) : <br><span id="maxPtAvailableFrc"></span></p>
             </div>

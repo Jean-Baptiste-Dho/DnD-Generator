@@ -1,6 +1,6 @@
 import { handleCalcRemaining } from "./remaining_pt.js";
 
-const tribPerso = document.querySelector("#tribe");
+const tribPerso = document.querySelector("#tribes");
 
 export let HandleBonusTribs = () => {
   switch (tribPerso.value) {
