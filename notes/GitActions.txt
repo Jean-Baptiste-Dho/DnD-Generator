@@ -1,5 +1,5 @@
 git add .
-git commit -m "*"
+git commit -m "mise en place + test liste-template"
 git push
 
 git add .

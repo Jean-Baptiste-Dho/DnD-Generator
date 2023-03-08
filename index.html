@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- type="module" pour utiliser les export/import, plus obligatoire le defer, mais cumul possible -->
-  <script src="./js/main.js" type="module"></script>
+  <script src="./js/render.js" type="module"></script>
 
   <title>Document</title>
 </head>
@@ -25,7 +25,19 @@
   </div>
 
 
-
+  <main>
+    <div id="tribe"></div>
+    <div id="classe"></div>
+    <div id="gender"></div>
+  </main>
 </body>
+
+<template id="list-template">
+  <label for="selection" class="label"></label>
+  <select name="selection" id="selection">
+    <option class="option" value="">Selectionnez une option</option>
+  </select>
+</template>
+
 
 </html>
