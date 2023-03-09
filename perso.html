@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="css/perso.css">
 
     <!-- type="module" pour utiliser les export/import, plus obligatoire le defer, mais cumul possible -->
-    <script src="./js/main.js" type="module"></script>
     <script src="./js/render.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
+    <!-- <script src="./js/tribes.js" type="module"></script> -->
 
     <title>Document</title>
 </head>
@@ -129,21 +130,18 @@
     </div>
 
 
+
+
+    <template id="list-template">
+        <label for="selection" class="label"></label>
+        <select name="selection" id="list-template-id">
+            <option class="option" value="">Selectionnez une option</option>
+        </select>
+    </template>
+
+
 </body>
 
-<template id="list-template">
-    <label for="selection" class="label"></label>
-    <select name="selection" id="selection">
-        <option class="option" value="">Selectionnez une option</option>
-    </select>
-</template>
-
-<template id="">
-    <label for="selection" class="label"></label>
-    <select name="selection" id="selection">
-        <option class="option" value="">Selectionnez une option</option>
-    </select>
-</template>
 
 
 </html>

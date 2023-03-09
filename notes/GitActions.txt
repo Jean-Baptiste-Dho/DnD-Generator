@@ -1,5 +1,5 @@
 git add .
-git commit -m "implements des templates dan sle perso.html pb de récupération des values. A voir..."
+git commit -m "correction probleme de chargement du dom avant interaction avec variable"
 git push
 
 git add .

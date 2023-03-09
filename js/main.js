@@ -1,9 +1,3 @@
-/* import Test from "./user.js"; //import OBJECT OR CLASS from
-import { test } from "./user.js"; //import FUNCTION from
-import { function1, function2 } from "./fonctions.js"; //import MULTIPLE-FUNCTION from
-import { function3 as pomme, function4 as clafouti } from "./fonctions.js"; //import FUNCTION AS ALIAS from
-import "./class1.js"; //import DEFAULT from
-import Rectangle from "./class1.js"; */
 import { handleImg } from "./img.js";
 import { calcSkill } from "./calc_skills.js";
 import { HandleBonusJobs } from "./job.js";
