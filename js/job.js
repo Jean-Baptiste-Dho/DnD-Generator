@@ -1,35 +1,46 @@
 import { handleCalcRemaining } from "./remaining_pt.js";
+import { berLegend, ranLegend, skaLegend, lokLegend } from "./legends.js";
 
-const classPerso = document.querySelector("#jobs");
+document.addEventListener("DOMContentLoaded", () => {
+  const classPerso = document.querySelector("#list-template-1");
+  classPerso.addEventListener("click", HandleBonusJobs);
+});
 
 export let HandleBonusJobs = () => {
+  const legend = document.querySelector(".legend-1");
+  const classPerso = document.querySelector("#list-template-1");
   switch (classPerso.value) {
-    case "berserker":
+    case "Berserker":
       attribution(10, 0, 1);
       handleCalcRemaining();
+      legend.innerHTML = berLegend;
       break;
 
-    case "ranger":
+    case "Ranger":
       attribution(10, 2, 3);
       handleCalcRemaining();
+      legend.innerHTML = ranLegend;
       break;
 
-    case "loekVol":
+    case "Loeknir/Völva":
       attribution(10, 4, 5);
       handleCalcRemaining();
+      legend.innerHTML = lokLegend;
       break;
 
-    case "skald":
+    case "Skald":
       attribution(20, 6);
       handleCalcRemaining();
+      legend.innerHTML = skaLegend;
       break;
 
     default:
+      attribution("", 8);
+      handleCalcRemaining();
+      legend.innerHTML = "";
       break;
   }
 };
-
-classPerso.addEventListener("click", HandleBonusJobs);
 
 const attribution = (Valbonus, Car1, Car2) => {
   const skill = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"];

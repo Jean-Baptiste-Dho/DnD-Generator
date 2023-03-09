@@ -1,5 +1,5 @@
 git add .
-git commit -m "correction probleme de chargement du dom avant interaction avec variable"
+git commit -m "mise à jour des fonctions jobs et tribes. ajout de legends.js et implement dans jobs/tribs"
 git push
 
 git add .
