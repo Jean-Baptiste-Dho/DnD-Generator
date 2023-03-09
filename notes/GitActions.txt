@@ -1,5 +1,5 @@
 git add .
-git commit -m "mise à jour des fonctions jobs et tribes. ajout de legends.js et implement dans jobs/tribs"
+git commit -m "modification agencement des elements avec grid.css, ajout #tl3"
 git push
 
 git add .

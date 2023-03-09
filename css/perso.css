@@ -1,17 +1,18 @@
 
 .containerCarac {
     --gap : 5px;
-    --num-col : 5;
+    --num-col : 4;
 
     display: grid;
     overflow: hidden;
-    grid-template-columns: repeat(var(--num-col), 19%);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(var(--num-col), 23%);
+    grid-template-rows: 150px 200px 150px 500px;
     grid-template-areas:
 
-    "p p jb n t "
-    "p p . g . "
-    "p p car car car "
+    "p p n g "
+    "p p jb t "
+    "p p jb t "
+    "car car car car "
     ;
     gap: var(--gap);
     width: 100%;
@@ -25,7 +26,9 @@
     display: flex;
     margin: auto;
     flex-direction: column;
+    height: 100%;
 }
+
 #jobs {
     grid-area: jb;
     display: flex;
@@ -53,20 +56,24 @@
 
     display: grid;
     overflow: hidden;
-    grid-template-columns: repeat(var(--num-col), 23%);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(var(--num-col), 1fr);
+    grid-template-rows: 3fr 3fr 3fr 1fr;
     grid-template-areas:
 
-    "tl1 tl2 tl2 tl2"
+    /* "tl1 tl2 tl2 tl2"
     "frc cst int chc"
     "agi vit pcp chc"
+    ". ck af ." */
+
+    "frc cst int tl1"
+    "agi vit pcp tl2"
+    ". chc . tl3"
     ". ck af ."
     ;
     gap: 10px;
-    justify-content: center;
 }
 
-#tl1, #tl2, #frc, #cst, #vit, #int, #pcp, #chc, #agi {
+#tl1, #tl2, #tl3, #frc, #cst, #vit, #int, #pcp, #chc, #agi {
     text-align: center;
     align-self: center;
 }
@@ -77,6 +84,10 @@
 
 #tl2{
     grid-area: tl2;
+}
+
+#tl3{
+    grid-area: tl3;
 }
 
 #frc {
@@ -122,10 +133,16 @@
 
 #check{
     grid-area: ck;
+    height: 75%;
+    width: 80%;
+    margin: auto;
 }
 
 #af{
     grid-area: af;
+    height: 75%;
+    width: 80%;
+    margin: auto;
 }
 
 .noWrap{
