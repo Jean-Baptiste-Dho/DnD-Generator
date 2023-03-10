@@ -1,5 +1,11 @@
 import { handleCalcRemaining } from "./remaining_pt.js";
-import { bjoLegend, wulLegend, ravLegend, hanLegend } from "./legends.js";
+import {
+  bjoLegend,
+  wulLegend,
+  ravLegend,
+  hanLegend,
+  skills,
+} from "./variables.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const tribPerso = document.querySelector("#list-template-2");
@@ -10,6 +16,11 @@ export const HandleBonusTribs = () => {
   const tribPerso = document.querySelector("#list-template-2");
   const legend = document.querySelector(".legend-2");
   switch (tribPerso.value) {
+    /*
+    skills = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"]
+                0      1      2      3      4      5      6 
+    */
+
     case "Björner":
       attribution2(5, 0, -5, 4);
       handleCalcRemaining();
@@ -42,11 +53,17 @@ export const HandleBonusTribs = () => {
   }
 };
 
+/**
+ * Tribes modifications
+ * @param {int} valBonus define BONUS value
+ * @param {int} Car1 targeted Bonus skill
+ * @param {int} valMalus define MALUS value ( !!! <0 !!!)
+ * @param {int} Car2 targeted Malus skill
+ */
 const attribution2 = (valBonus, Car1, valMalus, Car2) => {
-  const skill = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"];
   for (let i = 0; i < 7; i++) {
-    let bonusText = document.querySelector(`#bonusTrib${skill[i]}1`);
-    let bonusValue = document.querySelector(`#bonusTrib${skill[i]}`);
+    let bonusText = document.querySelector(`#bonusTrib${skills[i]}1`);
+    let bonusValue = document.querySelector(`#bonusTrib${skills[i]}`);
     if (i == Car1) {
       bonusText.removeAttribute("class");
       bonusText.classList.add("bonus");

@@ -1,5 +1,5 @@
 git add .
-git commit -m "modification agencement des elements avec grid.css, ajout #tl3"
+git commit -m "amelioration commentaires pour tribs et jobs"
 git push
 
 git add .

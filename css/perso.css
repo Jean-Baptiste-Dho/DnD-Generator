@@ -6,16 +6,17 @@
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(var(--num-col), 23%);
-    grid-template-rows: 150px 200px 150px 500px;
+    grid-template-rows: 10% 10% 30% 50%;
     grid-template-areas:
 
     "p p n g "
-    "p p jb t "
+    "p p ng ng "
     "p p jb t "
     "car car car car "
     ;
     gap: var(--gap);
     width: 100%;
+    height: 100vh;
 
 }
 
@@ -39,15 +40,30 @@
     display: flex;
     flex-direction: column;
 }
+
+.nameGenerator, #genders, .name {
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100px;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.nameGenerator {
+    grid-area: ng;
+    justify-content: left;
+
+}
+
 .name {
     grid-area: n;
-    display: flex;
-    flex-direction: column;
 }
+
 #genders {
     grid-area: g;
-    display: flex;
-    flex-direction: column;
+
 }
 
 .carac {
@@ -57,13 +73,8 @@
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(var(--num-col), 1fr);
-    grid-template-rows: 3fr 3fr 3fr 1fr;
+    grid-template-rows: 3fr 3fr 3fr 2fr;
     grid-template-areas:
-
-    /* "tl1 tl2 tl2 tl2"
-    "frc cst int chc"
-    "agi vit pcp chc"
-    ". ck af ." */
 
     "frc cst int tl1"
     "agi vit pcp tl2"
@@ -131,18 +142,16 @@
     object-fit: contain;
 }
 
-#check{
+#check, #af{
     grid-area: ck;
-    height: 75%;
+    height: 40%;
     width: 80%;
     margin: auto;
 }
 
 #af{
     grid-area: af;
-    height: 75%;
-    width: 80%;
-    margin: auto;
+
 }
 
 .noWrap{
