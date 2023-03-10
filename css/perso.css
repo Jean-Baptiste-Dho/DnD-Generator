@@ -16,7 +16,6 @@
     ;
     gap: var(--gap);
     width: 100%;
-    height: 100vh;
 
 }
 
@@ -71,15 +70,13 @@
     --num-col : 4;
 
     display: grid;
-    overflow: hidden;
     grid-template-columns: repeat(var(--num-col), 1fr);
-    grid-template-rows: 3fr 3fr 3fr 2fr;
+    grid-template-rows: 3fr 3fr 3fr;
     grid-template-areas:
 
     "frc cst int tl1"
     "agi vit pcp tl2"
-    ". chc . tl3"
-    ". ck af ."
+    "ck af chc tl3"
     ;
     gap: 10px;
 }

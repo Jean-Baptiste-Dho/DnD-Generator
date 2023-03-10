@@ -1,15 +1,6 @@
-import {
-  generateList,
-  //generateCarac,
-  generateTemplate,
-} from "./template.js";
+import { generateList, generateTemplate } from "./template.js";
 
-import {
-  jobsList,
-  tribeList,
-  sex,
-  //skills
-} from "./variables.js";
+import { jobsList, tribeList, sex, skills } from "./variables.js";
 
 generateList("jobs", jobsList, "Choisisez votre classe", 1);
 
@@ -17,6 +8,4 @@ generateList("tribes", tribeList, "Choisisez votre peuple", 2);
 
 generateList("genders", sex, "Choisisez votre genre", 3);
 
-//generateCarac("Cst", "Cst");
-
-generateTemplate();
+generateTemplate(skills, skills);

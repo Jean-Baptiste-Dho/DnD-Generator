@@ -1,3 +1,5 @@
+import { skills } from "./variables.js";
+
 let frc = document.querySelector("#valueFrc");
 let cst = document.querySelector("#valueCst");
 let int = document.querySelector("#valueInt");
@@ -7,31 +9,17 @@ let pcp = document.querySelector("#valuePcp");
 
 export const handleCalcRemaining = () => {
   for (let i = 0; i <= 5; i++) {
-    const skill = ["Frc", "Cst", "Int", "Vit", "Agi", "Pcp"];
-
-    const target1 = document.querySelector(`#maxPtAvailable${skill[i]}`);
-
-    const target2 = document.querySelector(`#bonusClass${skill[i]}`).value;
-    // console.log(
-    //   `Class (${skill[i]}) :` +
-    //     document.querySelector(`#bonusClass${skill[i]}`).value
-    // );
-
-    const target3 = document.querySelector(`#bonusTrib${skill[i]}`).value;
-    // console.log(
-    //   `Trib (${skill[i]}) :` +
-    //     document.querySelector(`#bonusTrib${skill[i]}`).value
-    // );
+    const target1 = document.querySelector(`#maxAvailablePt${skills[i]}`);
+    const target2 = document.querySelector(`#classVal${skills[i]}`).value;
+    const target3 = document.querySelector(`#tribVal${skills[i]}`).value;
 
     let total =
       50 -
       (target2 +
         target3 +
-        document.querySelector(`#value${skill[i]}`).value * 1);
-    //console.log(`total =` + total);
+        document.querySelector(`#value${skills[i]}`).value * 1);
 
     if (total >= 0) {
-      //console.log(target1.innerHTML);
       target1.innerHTML = total;
     } else if (total < 0) {
       target1.innerHTML = `remove ${total * -1} point(s)`;

@@ -1,5 +1,5 @@
 git add .
-git commit -m "templates caracteritiques affiché"
+git commit -m "templates caracteritiques fonctionnels"
 git push
 
 git add .

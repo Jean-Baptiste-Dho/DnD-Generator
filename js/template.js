@@ -46,44 +46,71 @@ export const generateList = (target, choiceListe, labelTitle, itération) => {
  * @param {string} carac chosen skill (cf render.js)
  */
 export const generateCarac = (target, carac) => {
-  const template = document.querySelector("#carac-template");
-  const clone = document.importNode(template.content, true);
+  if (target != "Chc" || carac != "Chc") {
+    const template = document.querySelector("#carac-template");
+    const clone = document.importNode(template.content, true);
 
-  const targetDiv = document.querySelector(`#${target}`);
+    const targetDiv = document.querySelector(`#${target}`);
 
-  const label = clone.querySelector(".label");
-  label.for = carac;
-  label.textContent = carac;
+    const label = clone.querySelector(".label");
+    label.for = carac;
+    label.textContent = carac;
 
-  const span1 = clone.querySelector("#classText");
-  span1.id = "classText" + carac;
+    const span1 = clone.querySelector("#classText");
+    span1.id = "classText" + carac;
 
-  const span2 = clone.querySelector("#tribText");
-  span2.id = "tribText" + carac;
+    const span2 = clone.querySelector("#tribText");
+    span2.id = "tribText" + carac;
 
-  const span3 = clone.querySelector("#valClass");
-  span3.id = "classText" + carac;
+    const span3 = clone.querySelector("#valClass");
+    span3.id = "classVal" + carac;
 
-  const span4 = clone.querySelector("#valTrib");
-  span4.id = "tribText" + carac;
+    const span4 = clone.querySelector("#valTrib");
+    span4.id = "tribVal" + carac;
 
-  const input = clone.querySelector("#value");
-  input.id = "value" + carac;
-  input.name = carac;
+    const input = clone.querySelector("#value");
+    input.id = "value" + carac;
+    input.name = carac;
 
-  const span5 = clone.querySelector("#maxAvailablePt");
-  span5.id = "maxAvailablePt" + carac;
+    const span5 = clone.querySelector("#maxAvailablePt");
+    span5.id = "maxAvailablePt" + carac;
 
-  targetDiv.appendChild(clone);
+    targetDiv.appendChild(clone);
+  } else {
+    const template = document.querySelector("#carac-template");
+    const clone = document.importNode(template.content, true);
+
+    const targetDiv = document.querySelector(`#${target}`);
+
+    const label = clone.querySelector(".label");
+    label.for = carac;
+    label.textContent = carac + "(auto-gen)";
+
+    const span1 = clone.querySelector("#classText");
+    span1.id = "classText" + carac;
+
+    const span2 = clone.querySelector("#tribText");
+    span2.id = "tribText" + carac;
+
+    const span3 = clone.querySelector("#valClass");
+    span3.id = "classVal" + carac;
+
+    const span4 = clone.querySelector("#valTrib");
+    span4.id = "tribVal" + carac;
+
+    const div = clone.querySelector("#div-template");
+    clone.removeChild(div);
+
+    targetDiv.appendChild(clone);
+  }
 };
 /**
  *
  * @param {string} target list targeted divs / using querySelector
  * @param {string} carac exported skills list (cf render.js)
  */
-export const generateTemplate = () => {
-  for (let i = 0; i < skills.length; i++) {
-    console.log(skills[i]);
-    generateCarac(skills[i], skills[i]);
+export const generateTemplate = (target, carac) => {
+  for (let i = 0; i < target.length; i++) {
+    generateCarac(target[i], carac[i]);
   }
 };

@@ -80,7 +80,8 @@
             <div id="Pcp" class="noWrap">
             </div>
             <div id="Chc" class="noWrap">
-                <!-- <div id="frc" class="noWrap">
+            </div>
+            <!-- <div id="frc" class="noWrap">
                 <label for="frc">FRC</label><br>
                 <span id="bonusClassFrc1" class="hideText">Class : <span id="bonusClassFrc" value=""></span></span>
                 <span id="bonusTribFrc1" class="hideText ">Tribe : <span id="bonusTribFrc" value=""></span></span></br>
@@ -128,29 +129,29 @@
                 <span id="bonusTribChc1" class="hideText">Tribe : <span id="bonusTribChc" value=""></span></span><br>
                 <span id="valueChc"></span>
             </div> -->
-                <input id="check" type="button" name="verifier" value="Vérifier">
-                <input id="af" type="button" name="autocompleted" value="Auto-fill">
-            </div>
+            <input id="check" type="button" name="verifier" value="Vérifier">
+            <input id="af" type="button" name="autocompleted" value="Auto-fill">
         </div>
+    </div>
 
 
+    <template id="list-template">
+        <label for="selection" class="label"></label>
+        <select name="selection" id="list-template-id">
+            <option class="option" value="">Selectionnez une option</option>
+        </select>
+        <p class="legend"></p>
+    </template>
 
-
-        <template id="list-template">
-            <label for="selection" class="label"></label>
-            <select name="selection" id="list-template-id">
-                <option class="option" value="">Selectionnez une option</option>
-            </select>
-            <p class="legend"></p>
-        </template>
-
-        <template id="carac-template">
-            <label for="Pcp" class="label">PCP</label><br>
-            <span id="classText" class="hideText">Class : <span id="valClass" value=""></span></span>
-            <span id="tribText" class="hideText">Tribe : <span id="valTrib" value=""></span></span><br>
+    <template id="carac-template">
+        <label for="Pcp" class="label">PCP</label><br>
+        <span id="classText" class="hideText">Class : <span id="valClass" value=""></span></span>
+        <span id="tribText" class="hideText">Tribe : <span id="valTrib" value=""></span></span><br>
+        <div id="div-template">
             <input id="value" type="text" name="pcp">
             <p>Available point(s) : <br><span id="maxAvailablePt"></span></p>
-        </template>
+        </div>
+    </template>
 
 
 </body>

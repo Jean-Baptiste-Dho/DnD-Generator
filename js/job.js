@@ -62,7 +62,7 @@ export let HandleBonusJobs = () => {
 const attribution = (Valbonus, Car1, Car2) => {
   for (let i = 0; i < 7; i++) {
     let bonusText = document.querySelector(`#classText${skills[i]}`);
-    let bonusValue = document.querySelector(`#valTrib${skills[i]}`);
+    let bonusValue = document.querySelector(`#classVal${skills[i]}`);
     if (i == Car1 || i == Car2) {
       bonusText.classList.replace("hideText", "bonus");
       bonusValue.value = Valbonus;
