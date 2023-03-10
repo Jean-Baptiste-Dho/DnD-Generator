@@ -1,5 +1,5 @@
 git add .
-git commit -m "amelioration commentaires pour tribs et jobs"
+git commit -m "templates caracteritiques affiché"
 git push
 
 git add .

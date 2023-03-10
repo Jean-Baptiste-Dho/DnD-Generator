@@ -62,8 +62,8 @@ export const HandleBonusTribs = () => {
  */
 const attribution2 = (valBonus, Car1, valMalus, Car2) => {
   for (let i = 0; i < 7; i++) {
-    let bonusText = document.querySelector(`#bonusTrib${skills[i]}1`);
-    let bonusValue = document.querySelector(`#bonusTrib${skills[i]}`);
+    let bonusText = document.querySelector(`#tribText${skills[i]}`);
+    let bonusValue = document.querySelector(`#valTrib${skills[i]}`);
     if (i == Car1) {
       bonusText.removeAttribute("class");
       bonusText.classList.add("bonus");

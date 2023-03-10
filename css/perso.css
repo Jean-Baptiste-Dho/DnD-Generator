@@ -84,7 +84,7 @@
     gap: 10px;
 }
 
-#tl1, #tl2, #tl3, #frc, #cst, #vit, #int, #pcp, #chc, #agi {
+#tl1, #tl2, #tl3, #Frc, #Cst, #Vit, #Int, #Pcp, #Chc, #Agi {
     text-align: center;
     align-self: center;
 }
@@ -101,35 +101,35 @@
     grid-area: tl3;
 }
 
-#frc {
+#Frc {
     grid-area : frc;
 }
-#cst {
+#Cst {
     grid-area : cst;
 
 
 }
-#agi {
+#Agi {
     grid-area : agi;
 
 
 }
-#vit {
+#Vit {
     grid-area : vit;
 
 
 }
-#int {
+#Int {
     grid-area : int;
 
 
 }
-#pcp {
+#Pcp {
     grid-area : pcp;
 
 
 }
-#chc {
+#Chc {
     grid-area : chc;
     text-align: center;
     align-self: center;
@@ -137,9 +137,9 @@
 }
 
 #targetImg {
-    width: 400px;
-    height: 600px;
+    width: 50%;
     object-fit: contain;
+    margin-inline: auto ;
 }
 
 #check, #af{

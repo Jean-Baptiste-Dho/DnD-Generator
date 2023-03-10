@@ -67,7 +67,20 @@
             <h3 id="tl1">Total remaining of skills points = <br><span id="calcSkillTarget"></span></h3>
             <h4 id="tl2">Maximum 50pt/skill (including bonus) </h4>
             <h4 id="tl3">Minimum 10pt/skill.<br>Can't have a 0pt skill</h4>
-            <div id="frc" class="noWrap">
+            <div id="Frc" class="noWrap">
+            </div>
+            <div id="Cst" class="noWrap">
+            </div>
+            <div id="Int" class="noWrap">
+            </div>
+            <div id="Agi" class="noWrap">
+            </div>
+            <div id="Vit" class="noWrap">
+            </div>
+            <div id="Pcp" class="noWrap">
+            </div>
+            <div id="Chc" class="noWrap">
+                <!-- <div id="frc" class="noWrap">
                 <label for="frc">FRC</label><br>
                 <span id="bonusClassFrc1" class="hideText">Class : <span id="bonusClassFrc" value=""></span></span>
                 <span id="bonusTribFrc1" class="hideText ">Tribe : <span id="bonusTribFrc" value=""></span></span></br>
@@ -114,22 +127,30 @@
                 <span id="bonusClassChc1" class="hideText">Class : <span id="bonusClassChc" value=""></span></span>
                 <span id="bonusTribChc1" class="hideText">Tribe : <span id="bonusTribChc" value=""></span></span><br>
                 <span id="valueChc"></span>
+            </div> -->
+                <input id="check" type="button" name="verifier" value="Vérifier">
+                <input id="af" type="button" name="autocompleted" value="Auto-fill">
             </div>
-            <input id="check" type="button" name="verifier" value="Vérifier">
-            <input id="af" type="button" name="autocompleted" value="Auto-fill">
         </div>
-    </div>
 
 
 
 
-    <template id="list-template">
-        <label for="selection" class="label"></label>
-        <select name="selection" id="list-template-id">
-            <option class="option" value="">Selectionnez une option</option>
-        </select>
-        <p class="legend"></p>
-    </template>
+        <template id="list-template">
+            <label for="selection" class="label"></label>
+            <select name="selection" id="list-template-id">
+                <option class="option" value="">Selectionnez une option</option>
+            </select>
+            <p class="legend"></p>
+        </template>
+
+        <template id="carac-template">
+            <label for="Pcp" class="label">PCP</label><br>
+            <span id="classText" class="hideText">Class : <span id="valClass" value=""></span></span>
+            <span id="tribText" class="hideText">Tribe : <span id="valTrib" value=""></span></span><br>
+            <input id="value" type="text" name="pcp">
+            <p>Available point(s) : <br><span id="maxAvailablePt"></span></p>
+        </template>
 
 
 </body>
