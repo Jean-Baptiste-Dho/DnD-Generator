@@ -2,7 +2,6 @@ import { handleImg } from "./img.js";
 import { calcSkill } from "./calc_skills.js";
 import { HandleBonusJobs } from "./job.js";
 import { HandleBonusTribs } from "./tribes.js";
-//import { test } from "./tribes.js";
 import { setMarginPadding } from "./mef_span.js";
 import { handleCalcRemaining } from "./remaining_pt.js";
 
@@ -13,8 +12,6 @@ calcSkill();
 HandleBonusJobs();
 
 HandleBonusTribs();
-
-//test();
 
 setMarginPadding();
 

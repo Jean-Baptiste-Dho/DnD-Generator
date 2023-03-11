@@ -6,7 +6,7 @@
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(var(--num-col), 23%);
-    grid-template-rows: 10% 10% 30% 50%;
+    grid-template-rows: 10% 10% 10% 70%;
     grid-template-areas:
 
     "p p n g "
@@ -43,8 +43,7 @@
 .nameGenerator, #genders, .name {
     display:flex;
     flex-direction: column;
-    width: 250px;
-    height: 100px;
+    width: 200px;
     justify-content: center;
     margin: auto;
     
@@ -53,7 +52,6 @@
 .nameGenerator {
     grid-area: ng;
     justify-content: left;
-
 }
 
 .name {
@@ -62,7 +60,6 @@
 
 #genders {
     grid-area: g;
-
 }
 
 .carac {
@@ -79,6 +76,7 @@
     "ck af chc tl3"
     ;
     gap: 10px;
+    border: 2px solid black;
 }
 
 #tl1, #tl2, #tl3, #Frc, #Cst, #Vit, #Int, #Pcp, #Chc, #Agi {
@@ -141,7 +139,7 @@
 
 #check, #af{
     grid-area: ck;
-    height: 40%;
+    height: 30px;
     width: 80%;
     margin: auto;
 }

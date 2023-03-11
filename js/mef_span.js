@@ -1,5 +1,9 @@
 import { skills } from "./variables.js";
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".carac");
+});
+
 export const setMarginPadding = () => {
   for (let i = 0; i < 7; i++) {
     tribCss = document.querySelector(`#tribText${skills[i]}`);
