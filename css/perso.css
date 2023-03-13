@@ -5,8 +5,8 @@
 
     display: grid;
     overflow: hidden;
-    grid-template-columns: repeat(var(--num-col), 23%);
-    grid-template-rows: 10% 10% 10% 70%;
+    grid-template-columns: repeat(var(--num-col), 1fr);
+    grid-template-rows: 1fr 1fr 3fr 5fr;
     grid-template-areas:
 
     "p p n g "
@@ -15,7 +15,8 @@
     "car car car car "
     ;
     gap: var(--gap);
-    width: 100%;
+    width: 90%;
+    margin: auto;
 
 }
 
@@ -132,9 +133,11 @@
 }
 
 #targetImg {
-    width: 50%;
+    max-width: 250px;
+    min-height: 350px;
+    max-height: 350px;
     object-fit: contain;
-    margin-inline: auto ;
+    margin: auto;
 }
 
 #check, #af{

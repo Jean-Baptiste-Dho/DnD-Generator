@@ -17,6 +17,9 @@ setMarginPadding();
 
 handleCalcRemaining();
 
+const test = () => {
+  alert("maman - papa - alexandre - utopia");
+};
 //trib();
 /* const testClass = new Test("yvan", "dupoisson",50)
 console.log(testClass)

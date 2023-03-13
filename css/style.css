@@ -33,7 +33,7 @@ h1, label {
     text-align: center;
 }
 
-#imgPortrait {
+#imgSelect {
     width: 200px;
     margin-inline: auto;
   }
@@ -55,3 +55,4 @@ span{
     color: red !important;
     font-weight: bold;
 }
+

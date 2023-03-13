@@ -32,17 +32,17 @@
     <div class="containerCarac">
         <div class="portrait">
             <label for="imgPortrait">Choose your incarnation</label>
-            <select name="imgPortrait" id="imgPortrait">
-                <option value="freyja-1.webp">Freyja-1</option>
-                <option value="freyja-2.jpg">Freyja-2</option>
-                <option value="heimdall-1.jpg">heimdall</option>
-                <option value="loki-2.jpg">loki</option>
-                <option value="odin-1.jpg">odin</option>
-                <option value="sif-2.jpg">sif</option>
-                <option value="thor-3.jpg">thor</option>
-                <option value="tyr-1.jpg">tyr-1</option>
-                <option value="tyr-2.jpg">tyr-2</option>
-                <option value="tyr-3.jpg">tyr-3</option>
+            <select name="imgPortrait" id="imgSelect">
+                <option value="Freyja-1.webp">Freyja-1</option>
+                <option value="Freyja-2.jpg">Freyja-2</option>
+                <option value="Heimdall-1.jpg">Heimdall</option>
+                <option value="Loki-2.jpg">Loki</option>
+                <option value="Odin-1.jpg">Odin</option>
+                <option value="Sif-2.jpg">Sif</option>
+                <option value="Thor-3.jpg">Thor</option>
+                <option value="Tyr-1.jpg">Tyr-1</option>
+                <option value="Tyr-2.jpg">Tyr-2</option>
+                <option value="Tyr-3.jpg">Tyr-3</option>
                 <option value="Valkyries-1.webp">Valkyries-1</option>
                 <option value="Valkyries-2.jpg">Valkyries-2</option>
                 <option value="Valkyries-3.webp">Valkyries-3</option>
@@ -64,8 +64,8 @@
             <input type="button" name="genName" id="genName" value="Click to generate ">
         </div>
         <div class="carac">
-            <h3 id="tl1">Total remaining of skills points = <br><span id="calcSkillTarget"></span></h3>
-            <h4 id="tl2">Maximum 50pt/skill (including bonus) </h4>
+            <h3 id="tl1">Total remaining <br>of skills points = <br><span id="calcSkillTarget"></span></h3>
+            <h4 id="tl2">Maximum 50pt/skill<br>(including bonus) </h4>
             <h4 id="tl3">Minimum 10pt/skill.<br>Can't have a 0pt skill</h4>
             <div id="Frc" class="noWrap">
             </div>
@@ -81,81 +81,32 @@
             </div>
             <div id="Chc" class="noWrap">
             </div>
-            <!-- <div id="frc" class="noWrap">
-                <label for="frc">FRC</label><br>
-                <span id="bonusClassFrc1" class="hideText">Class : <span id="bonusClassFrc" value=""></span></span>
-                <span id="bonusTribFrc1" class="hideText ">Tribe : <span id="bonusTribFrc" value=""></span></span></br>
-                <input id="valueFrc" type="text" name="frc">
-                <p>Available point(s) : <br><span id="maxPtAvailableFrc"></span></p>
-            </div>
-            <div id="cst" class="noWrap">
-                <label for="cst">CST</label><br>
-                <span id="bonusClassCst1" class="hideText">Class : <span id="bonusClassCst" value=""></span></span>
-                <span id="bonusTribCst1" class="hideText">Tribe : <span id="bonusTribCst" value=""></span></span></br>
-                <input id="valueCst" type="text" name="cst">
-                <p>Available point(s) : <br><span id="maxPtAvailableCst"></span></p>
-            </div>
-            <div id="int" class="noWrap">
-                <label for="int">INT</label><br>
-                <span id="bonusClassInt1" class="hideText">Class : <span id="bonusClassInt" value=""></span></span>
-                <span id="bonusTribInt1" class="hideText">Tribe : <span id="bonusTribInt" value=""></span></span><br>
-                <input id="valueInt" type="text" name="int">
-                <p>Available point(s) : <br><span id="maxPtAvailableInt"></span></p>
-            </div>
-            <div id="agi" class="noWrap">
-                <label for="agi">AGI</label><br>
-                <span id="bonusClassAgi1" class="hideText">Class : <span id="bonusClassAgi" value=""></span></span>
-                <span id="bonusTribAgi1" class="hideText">Tribe : <span id="bonusTribAgi" value=""></span></span><br>
-                <input id="valueAgi" type="text" name="agi">
-                <p>Available point(s) : <br><span id="maxPtAvailableAgi"></span></p>
-            </div>
-            <div id="vit" class="noWrap">
-                <label for="vit">VIT</label><br>
-                <span id="bonusClassVit1" class="hideText">Class : <span id="bonusClassVit" value=""></span></span>
-                <span id="bonusTribVit1" class="hideText">Tribe : <span id="bonusTribVit" value=""></span></span><br>
-                <input id="valueVit" type="text" name="vit">
-                <p>Available point(s) : <br><span id="maxPtAvailableVit"></span></p>
-            </div>
-            <div id="pcp" class="noWrap">
-                <label for="pcp">PCP</label><br>
-                <span id="bonusClassPcp1" class="hideText">Class : <span id="bonusClassPcp" value=""></span></span>
-                <span id="bonusTribPcp1" class="hideText">Tribe : <span id="bonusTribPcp" value=""></span></span><br>
-                <input id="valuePcp" type="text" name="pcp">
-                <p>Available point(s) : <br><span id="maxPtAvailablePcp"></span></p>
-            </div>
-            <div id="chc" class="noWrap">
-                <label for="chc">CHC (auto-gen)</label><br>
-                <span id="bonusClassChc1" class="hideText">Class : <span id="bonusClassChc" value=""></span></span>
-                <span id="bonusTribChc1" class="hideText">Tribe : <span id="bonusTribChc" value=""></span></span><br>
-                <span id="valueChc"></span>
-            </div> -->
+            <!-- anciennement les lignes ecrires allaient jusqu'a ligne 131 soit une cinquantaines de lignes -->
             <input id="check" type="button" name="verifier" value="Vérifier">
             <input id="af" type="button" name="autocompleted" value="Auto-fill">
         </div>
     </div>
 
 
-    <template id="list-template">
-        <label for="selection" class="label"></label>
-        <select name="selection" id="list-template-id">
-            <option class="option" value="">Selectionnez une option</option>
-        </select>
-        <p class="legend"></p>
-    </template>
-
-    <template id="carac-template">
-        <label for="" class="label">PCP</label><br>
-        <span id="classText" class="hideText">Class : <span id="valClass" value=""></span></span>
-        <span id="tribText" class="hideText">Tribe : <span id="valTrib" value=""></span></span><br>
-        <div id="div-template">
-            <input id="value" type="text" name="">
-            <p>Available point(s) : <br><span id="maxAvailablePt"></span></p>
-        </div>
-    </template>
-
-
 </body>
 
 
+<template id="list-template">
+    <label for="selection" class="label"></label>
+    <select name="selection" id="list-template-id">
+        <option class="option" value="">Selectionnez une option</option>
+    </select>
+    <p class="legend"></p>
+</template>
+
+<template id="carac-template">
+    <label for="" class="label">PCP</label><br>
+    <span id="classText" class="hideText">Class : <span id="valClass" value=""></span></span>
+    <span id="tribText" class="hideText">Tribe : <span id="valTrib" value=""></span></span><br>
+    <div id="div-template">
+        <input id="value" type="text" name="">
+        <p>Available point(s) : <br><span id="maxAvailablePt"></span></p>
+    </div>
+</template>
 
 </html>

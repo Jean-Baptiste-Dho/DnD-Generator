@@ -1,4 +1,4 @@
-let img = document.querySelector("#imgPortrait");
+let img = document.querySelector("#imgSelect");
 let target = document.querySelector("#targetImg");
 img.addEventListener("click", handleImg);
 
