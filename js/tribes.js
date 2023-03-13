@@ -7,10 +7,10 @@ import {
   skills,
 } from "./variables.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const tribPerso = document.querySelector("#list-template-2");
-  tribPerso.addEventListener("click", HandleBonusTribs);
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   const tribPerso = document.querySelector("#list-template-2");
+//   tribPerso.addEventListener("click", HandleBonusTribs);
+// });
 
 export const HandleBonusTribs = () => {
   const tribPerso = document.querySelector("#list-template-2");

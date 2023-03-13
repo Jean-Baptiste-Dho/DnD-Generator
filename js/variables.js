@@ -21,7 +21,7 @@ export const wulLegend =
   "Tribu du Loup. Ils sont plus à l'aise en forêt que dans une ville. Chasseurs séculaires, ils ont un vision affutée qui leur montre des détails invibiles aux yeux des chasseurs les plus aggeris. Ascétique par tradition, leur consitution n'a d'égal que leur humour...";
 
 export const ravLegend =
-  "Tribu du Corbeau. Les natifs de ce peuple sont particulièrement proche des dieux. Leur éducation stricte dans les domaines intellectuels et legislatif est tel qu'ils n'ont pas beaucoup de temps à consacrer aux activités physiques. ils forment beaucoup de représantant de l'Althing.";
+  "Tribu du Corbeau. Les natifs de ce peuple sont particulièrement proche des dieux. Leur éducation stricte dans les domaines intellectuels et legislatif est tel qu'ils n'ont pas beaucoup de temps à consacrer aux activités physiques. ils forment beaucoups de représentants de l'Althing.";
 
 export const hanLegend =
   "Tribu du Coq. Les natifs de ce peuple sont des grandes gueules nées sous une bonne étoile; Leur chance insolente en a ruiné plus d'un. Ils passent rarement inaperçu à cause de leur tempérament extravagant. Leur temperament têtu leur fait souvent trainer des pieds...";
@@ -37,3 +37,18 @@ export const sex = ["Masculin", "Féminin", "Différent"];
 /* Skills lists  */
 
 export const skills = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"];
+
+/* skills value autofill */
+
+export const berSkills = [40, 30, 20, 20, 10, 20];
+export const ranSkills = [20, 20, 30, 30, 10, 30];
+export const lokSkills = [10, 20, 20, 20, 40, 30];
+export const skaSkills = [30, 20, 20, 20, 30, 20];
+
+// /* inputs targets */
+// export let frc = document.querySelector("#valueFrc");
+// export let cst = document.querySelector("#valueCst");
+// export let int = document.querySelector("#valueInt");
+// export let vit = document.querySelector("#valueVit");
+// export let agi = document.querySelector("#valueAgi");
+// export let pcp = document.querySelector("#valuePcp");

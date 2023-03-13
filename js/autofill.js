@@ -1,6 +1,24 @@
+import { calcSkill } from "./calc_skills.js";
 import { jobsList, tribeList, skills } from "./variables.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const tribVal = document.querySelector("#list-template-2");
-  tribPerso.addEventListener("click", HandleBonusTribs);
-});
+export const handleAutoFill = () => {
+  const classPerso = document.querySelector("#list-template-1");
+
+  switch (classPerso.value) {
+    case "Berserker":
+      aezfazef;
+      break;
+    case "Berserker":
+      aezfazef;
+      break;
+    case "Berserker":
+      aezfazef;
+      break;
+    case "Berserker":
+      aezfazef;
+      break;
+    default:
+      alert("Choissiez une Classe !");
+      break;
+  }
+};

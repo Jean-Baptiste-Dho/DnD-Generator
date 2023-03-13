@@ -7,10 +7,10 @@ import {
   skills,
 } from "./variables.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const classPerso = document.querySelector("#list-template-1");
-  classPerso.addEventListener("click", HandleBonusJobs);
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   const classPerso = document.querySelector("#list-template-1");
+//   classPerso.addEventListener("click", HandleBonusJobs);
+// });
 
 export let HandleBonusJobs = () => {
   const legend = document.querySelector(".legend-1");

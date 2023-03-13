@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 export const setMarginPadding = () => {
+  skills;
   for (let i = 0; i < 7; i++) {
     tribCss = document.querySelector(`#tribText${skills[i]}`);
     classCss = document.querySelector(`#classText${skills[i]}`);

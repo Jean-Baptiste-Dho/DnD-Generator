@@ -4,35 +4,28 @@ import { HandleBonusJobs } from "./job.js";
 import { HandleBonusTribs } from "./tribes.js";
 import { setMarginPadding } from "./mef_span.js";
 import { handleCalcRemaining } from "./remaining_pt.js";
+import { handleAutoFill } from "./autofill.js";
+import { skills } from "./variables.js";
 
 handleImg();
 
-calcSkill();
+//calcSkill();
+for (let i = 0; i < 6; i++) {
+  let path = document.querySelector(`#value${skills[i]}`);
+  path.addEventListener("keyup", calcSkill);
+  path.addEventListener("keyup", handleCalcRemaining);
+}
 
-HandleBonusJobs();
+//HandleBonusJobs();
+const classPerso = document.querySelector("#list-template-1");
+classPerso.addEventListener("click", HandleBonusJobs);
 
-HandleBonusTribs();
+//HandleBonusTribs();
+const tribPerso = document.querySelector("#list-template-2");
+tribPerso.addEventListener("click", HandleBonusTribs);
 
-setMarginPadding();
+//handleAutoFill();
+const autofill = document.querySelector("#af");
+autofill.addEventListener("click", handleAutoFill);
 
-handleCalcRemaining();
-
-const test = () => {
-  alert("maman - papa - alexandre - utopia");
-};
-//trib();
-/* const testClass = new Test("yvan", "dupoisson",50)
-console.log(testClass)
-
-test()
-
-function1(3,7)
-
-function2(5,5)
-
-pomme(9,3)
-
-clafouti(6,5)
-
-const polygone = new Rectangle (5,13)
-console.log(polygone) */
+//setMarginPadding();
