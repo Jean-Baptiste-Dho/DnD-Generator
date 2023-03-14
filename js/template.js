@@ -6,8 +6,6 @@
  * @param {int} itération template iteration
  */
 
-import { skills } from "./variables.js";
-
 export const generateList = (target, choiceListe, labelTitle, itération) => {
   const template = document.querySelector("#list-template");
   const clone = document.importNode(template.content, true);
