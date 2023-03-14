@@ -1,5 +1,5 @@
 git add .
-git commit -m "auto calc des points ok !"
+git commit -m "voir a redefinir les fonctions calc_skills et remaining_pt pour les fusionner et faciliter la maintenance"
 git push
 
 git add .

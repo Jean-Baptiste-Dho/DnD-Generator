@@ -107,7 +107,7 @@ export const generateCarac = (target, carac) => {
  * @param {string} target list targeted divs / using querySelector
  * @param {string} carac exported skills list (cf render.js)
  */
-export const generateTemplate = (target, carac) => {
+export const generateTemplateCarac = (target, carac) => {
   for (let i = 0; i < target.length; i++) {
     generateCarac(target[i], carac[i]);
   }

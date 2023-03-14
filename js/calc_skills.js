@@ -1,21 +1,28 @@
 import { skills } from "./variables.js";
 
 export const calcSkill = () => {
-  let frc = document.querySelector("#valueFrc");
-  let cst = document.querySelector("#valueCst");
-  let int = document.querySelector("#valueInt");
-  let vit = document.querySelector("#valueVit");
-  let agi = document.querySelector("#valueAgi");
-  let pcp = document.querySelector("#valuePcp");
-  let total =
-    140 - frc.value - cst.value - int.value - vit.value - agi.value - pcp.value;
   let target = document.querySelector("#calcSkillTarget");
-  if (target.innerHTML == 0) {
-    target.style.color = "green";
-    target.innerHTML = total;
-  } else {
-    target.style.color = "red";
-    target.innerHTML = total;
+
+  let total = 140;
+  for (let i = 0; i <= 5; i++) {
+    let test = parseInt(document.querySelector(`#value${skills[i]}`).value, 10);
+    let target2 = parseInt(
+      document.querySelector(`#classVal${skills[i]}`).value,
+      10
+    );
+    let target3 = parseInt(
+      document.querySelector(`#tribVal${skills[i]}`).value,
+      10
+    );
+
+    total -= test + target2 + target3;
+    console.log(total);
   }
-  return (target.innerHTML = total);
+  if (target.innerHTML === 0) {
+    target.innerHTML = total;
+    target.style.color = "green";
+  } else {
+    target.innerHTML = total;
+    target.style.color = "red";
+  }
 };

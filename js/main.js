@@ -12,7 +12,7 @@ initialisation();
 
 handleImg();
 
-//calcSkill();
+calcSkill();
 for (let i = 0; i <= 5; i++) {
   let path = document.querySelector(`#value${skills[i]}`);
   path.addEventListener("keyup", calcSkill);
