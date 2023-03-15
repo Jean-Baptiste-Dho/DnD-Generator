@@ -1,9 +1,8 @@
-import { skills } from "./variables.js";
+import { skills, total } from "./variables.js";
 
 export const calcSkill = () => {
+  let reste = 0;
   let target = document.querySelector("#calcSkillTarget");
-
-  let total = 140;
   for (let i = 0; i < 7; i++) {
     if (skills[i] !== "Chc") {
       let target4 = parseInt(
@@ -18,7 +17,7 @@ export const calcSkill = () => {
         document.querySelector(`#tribVal${skills[i]}`).value,
         10
       );
-      total -= target2 + target3 + target4;
+      reste += target2 + target3 + target4;
     } else {
       let target2 = parseInt(
         document.querySelector(`#classVal${skills[i]}`).value,
@@ -28,14 +27,15 @@ export const calcSkill = () => {
         document.querySelector(`#tribVal${skills[i]}`).value,
         10
       );
-      total -= target2 + target3;
+      reste += target2 + target3;
     }
   }
-  if (target.innerHTML == 0) {
-    target.innerHTML = total;
-    target.style.color = "green";
-  } else {
-    target.innerHTML = total;
+  console.log(reste);
+  if (target.value != 0) {
+    target.innerHTML = total - reste;
     target.style.color = "red";
+  } else {
+    target.innerHTML = total - reste;
+    target.style.color = "green";
   }
 };

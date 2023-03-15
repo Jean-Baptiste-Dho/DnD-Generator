@@ -28,7 +28,6 @@ export const handleCalcRemaining = () => {
         target1.innerHTML = `remove ${total * -1} point(s)`;
       }
     } else {
-      console.log("ca marche");
     }
   }
 };

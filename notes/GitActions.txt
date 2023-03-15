@@ -1,5 +1,5 @@
 git add .
-git commit -m "calc_skills / remainning_pt maj conditions jobs & tribs boucle. functions inclues dans trib et jobs eventListener"
+git commit -m "function autofill et modif total pt départ. modif dynamique de l'affichage de 'unattributed skills points'"
 git push
 
 git add .

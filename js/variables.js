@@ -1,3 +1,32 @@
+/* Templates list items */
+
+export const jobsList = [
+  "Berserker",
+  "Ranger",
+  "Loeknir/Völva",
+  "Skald",
+  "Vanilla",
+];
+
+export const tribeList = ["Björner", "Wülwer", "Ravner", "Hanïer", "Vanilla"];
+
+export const sex = ["Masculin", "Féminin", "Différent"];
+
+/* Skills lists  */
+export let total = 160;
+
+/* Skills lists  */
+
+export const skills = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"];
+
+/* skills value autofill */
+
+export const berSkills = [40, 30, 20, 20, 10, 20];
+export const ranSkills = [20, 20, 30, 30, 10, 30];
+export const lokSkills = [10, 20, 20, 20, 40, 30];
+export const skaSkills = [30, 20, 20, 20, 30, 20];
+export const vanSkills = [25, 35, 25, 25, 25, 25];
+
 /* Caracters descriptions */
 
 export const berLegend =
@@ -25,36 +54,3 @@ export const ravLegend =
 
 export const hanLegend =
   "Tribu du Coq. Les natifs de ce peuple sont des grandes gueules nées sous une bonne étoile; Leur chance insolente en a ruiné plus d'un. Ils passent rarement inaperçu à cause de leur tempérament extravagant. Leur temperament têtu leur fait souvent trainer des pieds...";
-
-/* Templates list items */
-
-export const jobsList = [
-  "Berserker",
-  "Ranger",
-  "Loeknir/Völva",
-  "Skald",
-  "Vanilla",
-];
-
-export const tribeList = ["Björner", "Wülwer", "Ravner", "Hanïer", "Vanilla"];
-
-export const sex = ["Masculin", "Féminin", "Différent"];
-
-/* Skills lists  */
-
-export const skills = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"];
-
-/* skills value autofill */
-
-export const berSkills = [40, 30, 20, 20, 10, 20];
-export const ranSkills = [20, 20, 30, 30, 10, 30];
-export const lokSkills = [10, 20, 20, 20, 40, 30];
-export const skaSkills = [30, 20, 20, 20, 30, 20];
-
-// /* inputs targets */
-// export let frc = document.querySelector("#valueFrc");
-// export let cst = document.querySelector("#valueCst");
-// export let int = document.querySelector("#valueInt");
-// export let vit = document.querySelector("#valueVit");
-// export let agi = document.querySelector("#valueAgi");
-// export let pcp = document.querySelector("#valuePcp");
