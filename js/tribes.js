@@ -40,7 +40,7 @@ export const HandleBonusTribs = () => {
       break;
 
     case "Hanïer":
-      attribution2(10, 6, -5, 3);
+      attribution2(5, 6, -5, 3);
       handleCalcRemaining();
       legend.innerHTML = hanLegend;
       break;
@@ -61,7 +61,7 @@ export const HandleBonusTribs = () => {
  * @param {int} Car2 targeted Malus skill
  */
 const attribution2 = (valBonus, Car1, valMalus, Car2) => {
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i <= 7; i++) {
     let bonusText = document.querySelector(`#tribText${skills[i]}`);
     let bonusValue = document.querySelector(`#tribVal${skills[i]}`);
     if (i == Car1) {

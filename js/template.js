@@ -60,10 +60,10 @@ export const generateCarac = (target, carac) => {
     const span2 = clone.querySelector("#tribText");
     span2.id = "tribText" + carac;
 
-    const span3 = clone.querySelector("#valClass");
+    const span3 = clone.querySelector("#classVal");
     span3.id = "classVal" + carac;
 
-    const span4 = clone.querySelector("#valTrib");
+    const span4 = clone.querySelector("#tribVal");
     span4.id = "tribVal" + carac;
 
     const input = clone.querySelector("#value");
@@ -90,10 +90,10 @@ export const generateCarac = (target, carac) => {
     const span2 = clone.querySelector("#tribText");
     span2.id = "tribText" + carac;
 
-    const span3 = clone.querySelector("#valClass");
+    const span3 = clone.querySelector("#classVal");
     span3.id = "classVal" + carac;
 
-    const span4 = clone.querySelector("#valTrib");
+    const span4 = clone.querySelector("#tribVal");
     span4.id = "tribVal" + carac;
 
     const div = clone.querySelector("#div-template");

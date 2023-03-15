@@ -40,7 +40,7 @@ export let HandleBonusJobs = () => {
       break;
 
     case "Skald":
-      attribution(20, 6);
+      attribution(20, 6, 8);
       handleCalcRemaining();
       legend.innerHTML = skaLegend;
       break;
@@ -60,7 +60,7 @@ export let HandleBonusJobs = () => {
  * @param {int} Car2
  */
 const attribution = (Valbonus, Car1, Car2) => {
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i <= 7; i++) {
     let bonusText = document.querySelector(`#classText${skills[i]}`);
     let bonusValue = document.querySelector(`#classVal${skills[i]}`);
     if (i == Car1 || i == Car2) {

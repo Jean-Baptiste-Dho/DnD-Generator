@@ -1,5 +1,5 @@
 git add .
-git commit -m "voir a redefinir les fonctions calc_skills et remaining_pt pour les fusionner et faciliter la maintenance"
+git commit -m "calc_skills / remainning_pt fonctionnel à 100%"
 git push
 
 git add .
