@@ -1,4 +1,5 @@
 import { handleCalcRemaining } from "./remaining_pt.js";
+import { calcSkill } from "./calc_skills.js";
 import {
   bjoLegend,
   wulLegend,
@@ -22,33 +23,38 @@ export const HandleBonusTribs = () => {
     */
 
     case "Björner":
+      legend.innerHTML = bjoLegend;
       attribution2(5, 0, -5, 4);
       handleCalcRemaining();
-      legend.innerHTML = bjoLegend;
+      calcSkill();
       break;
 
     case "Wülwer":
+      legend.innerHTML = wulLegend;
       attribution2(5, 5, -5, 1);
       handleCalcRemaining();
-      legend.innerHTML = wulLegend;
+      calcSkill();
       break;
 
     case "Ravner":
+      legend.innerHTML = ravLegend;
       attribution2(5, 4, -5, 0);
       handleCalcRemaining();
-      legend.innerHTML = ravLegend;
+      calcSkill();
       break;
 
     case "Hanïer":
+      legend.innerHTML = hanLegend;
       attribution2(5, 6, -5, 3);
       handleCalcRemaining();
-      legend.innerHTML = hanLegend;
+      calcSkill();
       break;
 
     default:
+      legend.innerHTML = "";
       attribution2("", 8, "", 8);
       handleCalcRemaining();
-      legend.innerHTML = "";
+      calcSkill();
       break;
   }
 };
@@ -61,7 +67,7 @@ export const HandleBonusTribs = () => {
  * @param {int} Car2 targeted Malus skill
  */
 const attribution2 = (valBonus, Car1, valMalus, Car2) => {
-  for (let i = 0; i <= 7; i++) {
+  for (let i = 0; i <= 6; i++) {
     let bonusText = document.querySelector(`#tribText${skills[i]}`);
     let bonusValue = document.querySelector(`#tribVal${skills[i]}`);
     if (i == Car1) {

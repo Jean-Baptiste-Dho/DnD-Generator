@@ -22,14 +22,14 @@ for (let i = 0; i < 6; i++) {
 //HandleBonusJobs();
 const classPerso = document.querySelector("#list-template-1");
 classPerso.addEventListener("click", HandleBonusJobs);
-classPerso.addEventListener("click", calcSkill);
-classPerso.addEventListener("click", handleCalcRemaining);
+//classPerso.addEventListener("click", calcSkill);
+//classPerso.addEventListener("click", handleCalcRemaining);
 
 //HandleBonusTribs();
 const tribPerso = document.querySelector("#list-template-2");
 tribPerso.addEventListener("click", HandleBonusTribs);
-tribPerso.addEventListener("click", calcSkill);
-tribPerso.addEventListener("click", handleCalcRemaining);
+//tribPerso.addEventListener("click", calcSkill);
+//tribPerso.addEventListener("click", handleCalcRemaining);
 
 //handleAutoFill();
 const autofill = document.querySelector("#af");

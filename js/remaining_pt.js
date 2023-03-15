@@ -20,12 +20,6 @@ export const handleCalcRemaining = () => {
 
       let total = 50 - (target2 + target3 + target4);
 
-      // console.log(skills[i]);
-      // console.log(target2);
-      // console.log(target3);
-      // console.log(target4);
-      // console.log(total);
-
       const target1 = document.querySelector(`#maxAvailablePt${skills[i]}`);
 
       if (total >= 0) {

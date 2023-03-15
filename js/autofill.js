@@ -6,16 +6,19 @@ export const handleAutoFill = () => {
 
   switch (classPerso.value) {
     case "Berserker":
-      aezfazef;
+      alert("Vous avez choisi la classe Berserker !");
       break;
-    case "Berserker":
-      aezfazef;
+    case "Ranger":
+      alert("Vous avez choisi la classe Ranger !");
       break;
-    case "Berserker":
-      aezfazef;
+    case "Loeknir/Völva":
+      alert("Vous avez choisi la classe Loeknir/Völva !");
       break;
-    case "Berserker":
-      aezfazef;
+    case "Skald":
+      alert("Vous avez choisi la classe Skald !");
+      break;
+    case "Vanilla":
+      alert("Vous avez choisi la classe Vanilla ! C'est courageux...");
       break;
     default:
       alert("Choissiez une Classe !");

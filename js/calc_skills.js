@@ -18,7 +18,6 @@ export const calcSkill = () => {
         document.querySelector(`#tribVal${skills[i]}`).value,
         10
       );
-      console.log(skills[i]);
       total -= target2 + target3 + target4;
     } else {
       let target2 = parseInt(
@@ -29,7 +28,6 @@ export const calcSkill = () => {
         document.querySelector(`#tribVal${skills[i]}`).value,
         10
       );
-      console.log(skills[i]);
       total -= target2 + target3;
     }
   }

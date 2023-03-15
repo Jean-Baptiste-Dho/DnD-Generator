@@ -28,9 +28,15 @@ export const hanLegend =
 
 /* Templates list items */
 
-export const jobsList = ["Berserker", "Ranger", "Loeknir/Völva", "Skald"];
+export const jobsList = [
+  "Berserker",
+  "Ranger",
+  "Loeknir/Völva",
+  "Skald",
+  "Vanilla",
+];
 
-export const tribeList = ["Björner", "Wülwer", "Ravner", "Hanïer"];
+export const tribeList = ["Björner", "Wülwer", "Ravner", "Hanïer", "Vanilla"];
 
 export const sex = ["Masculin", "Féminin", "Différent"];
 
