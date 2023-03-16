@@ -10,12 +10,12 @@ import {
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const tribPerso = document.querySelector("#list-template-2");
-//   tribPerso.addEventListener("click", HandleBonusTribs);
+//   tribPerso.addEventListener("click", HandleBonusTribes);
 // });
 
-export const HandleBonusTribs = () => {
+export const HandleBonusTribes = () => {
   const tribPerso = document.querySelector("#list-template-2");
-  const legend = document.querySelector(".legend-2");
+  const legend = document.querySelector("#legend-2");
   switch (tribPerso.value) {
     /*
     skills = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"]

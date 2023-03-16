@@ -1,7 +1,7 @@
 import { handleImg } from "./img.js";
 import { calcSkill } from "./calc_skills.js";
 import { HandleBonusJobs } from "./job.js";
-import { HandleBonusTribs } from "./tribes.js";
+import { HandleBonusTribes } from "./tribes.js";
 //import { setMarginPadding } from "./mef_span.js";
 import { handleCalcRemaining } from "./remaining_pt.js";
 import { handleAutoFill } from "./autofill.js";
@@ -22,7 +22,7 @@ const classPerso = document.querySelector("#list-template-1");
 classPerso.addEventListener("click", HandleBonusJobs);
 
 const tribPerso = document.querySelector("#list-template-2");
-tribPerso.addEventListener("click", HandleBonusTribs);
+tribPerso.addEventListener("click", HandleBonusTribes);
 
 const autofill = document.querySelector("#af");
 autofill.addEventListener("click", handleAutoFill);

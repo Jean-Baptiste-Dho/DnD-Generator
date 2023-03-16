@@ -14,7 +14,7 @@ import {
 // });
 
 export let HandleBonusJobs = () => {
-  const legend = document.querySelector(".legend-1");
+  const legend = document.querySelector("#legend-1");
   const classPerso = document.querySelector("#list-template-1");
   switch (classPerso.value) {
     /* 

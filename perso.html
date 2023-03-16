@@ -13,7 +13,6 @@
     <!-- type="module" pour utiliser les export/import, plus obligatoire le defer, mais cumul possible -->
     <script src="./js/render.js" type="module"></script>
     <script src="./js/main.js" type="module"></script>
-    <!-- <script src="./js/tribes.js" type="module"></script> -->
 
     <title>Character generator</title>
 </head>
@@ -51,11 +50,9 @@
             </select>
             <img id="targetImgPortrait" src="assets/default.png" alt="Your incarnation">
         </div>
-        <div id="jobsTribs">
-            <div id="jobs">
-            </div>
-            <div id="tribes">
-            </div>
+        <div id="jobs">
+        </div>
+        <div id="tribes">
         </div>
         <div id="nameGenderNameGenerator">
             <div id="genders">
@@ -97,10 +94,12 @@
 
 
 <template id="list-template">
-    <label for="selection" class="label"></label>
-    <select name="selection" id="list-template-id">
-        <option class="option" value="">Choose an option</option>
-    </select>
+    <div id="divSelect">
+        <label for="selection" class="label"></label>
+        <select name="selection" id="list-template-id">
+            <option class="option" value="">Choose an option</option>
+        </select>
+    </div>
     <p class="legend"></p>
     <img id="imgList" src="" alt="">
 </template>

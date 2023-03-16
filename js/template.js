@@ -11,16 +11,18 @@ export const generateList = (target, choiceListe, labelTitle, itération) => {
   const label = clone.querySelector(".label");
   const select = clone.querySelector("#list-template-id");
   const img = clone.querySelector("#imgList");
+  const div = clone.querySelector("#divSelect");
   const targetDiv = document.querySelector(`#${target}`);
   let nbItems = choiceListe.length;
   let i = 0;
   const p = clone.querySelector(".legend");
 
-  img.id = `imgList` + itération;
+  img.id = `imgList-` + itération;
 
   label.textContent = labelTitle;
   select.id = `list-template-` + itération;
   select.value = `list-template-` + itération;
+  div.id = `divSelect-` + itération;
 
   for (i; i < nbItems; i++) {
     let option = document.createElement("option");
@@ -30,7 +32,7 @@ export const generateList = (target, choiceListe, labelTitle, itération) => {
   }
 
   if (target !== "genders") {
-    p.className = `legend-` + itération;
+    p.id = `legend-` + itération;
     img.className = "imgList";
   } else {
     clone.removeChild(p);

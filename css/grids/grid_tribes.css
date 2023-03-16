@@ -1,0 +1,28 @@
+:root {
+  --num-col: 1;
+  --propLign: 10% 45% 45%;
+}
+
+#tribes {
+  display: grid;
+  grid-template-columns: --num-col;
+  grid-template-rows: var(--propLign);
+  grid-template-areas:
+    "ts"
+    "tl"
+    "ti";
+  border: 2px solid black;
+}
+
+#divSelect-2 {
+  grid-area: ts;
+  display: flex;
+  flex-direction: column;
+}
+#legend-2 {
+  grid-area: tl;
+}
+
+#imgList-2 {
+  grid-area: ti;
+}
