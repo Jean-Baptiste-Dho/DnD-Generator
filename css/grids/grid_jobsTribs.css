@@ -1,0 +1,39 @@
+#jobsTribs {
+  --num-col: 2;
+  --gap: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-col), 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+      /* jb:#jobs, t:#tribs, jl:#jobsLegend, tl:#tribsLegend 
+       ji:#jobsImg, ti:#tribsImg*/
+    "jb t"
+    "jl tl"
+    "ji ti"
+    /* "jl tl" */;
+  gap: var(--gap);
+  border: 2px solid black;
+}
+
+#jobs,
+#tribes {
+  grid-area: jb;
+  display: flex;
+  flex-direction: column;
+}
+#tribes {
+  grid-area: t;
+}
+#legend-1 {
+  grid-area: jl;
+}
+#legend-2 {
+  grid-area: tl;
+}
+#imgList1 {
+  grid-area: ji;
+}
+#imgList2 {
+  grid-area: ti;
+}

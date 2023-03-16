@@ -30,11 +30,11 @@ export const calcSkill = () => {
       reste += target2 + target3;
     }
   }
-  if (target.innerHTML != 0) {
-    target.innerHTML = total - reste;
-    target.style.color = "red";
-  } else {
+  if (target.innerHTML == 0) {
     target.innerHTML = total - reste;
     target.style.color = "green";
+  } else {
+    target.innerHTML = total - reste;
+    target.style.color = "red";
   }
 };

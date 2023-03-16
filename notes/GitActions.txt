@@ -1,5 +1,5 @@
 git add .
-git commit -m "organisation des feuilles css en segments spéficiques"
+git commit -m "organisation des feuilles css en segments spéficiques + dossier pour les grids"
 git push
 
 git add .

@@ -1,94 +1,22 @@
 @import url(images.css);
 @import url(bouton.css);
-@import url(characters_grid.css);
+@import url(grids/grid_characters.css);
+@import url(lists.css);
 
-#jobs,
-#tribes {
-  grid-area: jb;
-  display: flex;
-  flex-direction: column;
-}
-#tribes {
-  grid-area: t;
+.hideText {
+  color: var(--varColor) !important;
 }
 
-#nameGenerator,
-#genders,
-#name {
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
+.bonus {
+  color: green;
+  font-weight: bold;
 }
 
-#carac {
-  grid-area: car;
+.malus {
+  color: red;
+  font-weight: bold;
 }
 
-#nameGenerator {
-  grid-area: ng;
-  justify-content: left;
-}
-
-#name {
-  grid-area: n;
-}
-
-#genders {
-  grid-area: g;
-}
-
-#tl1,
-#tl2,
-#tl3,
-#Frc,
-#Cst,
-#Vit,
-#Int,
-#Pcp,
-#Chc,
-#Agi {
-  text-align: center;
-  align-self: center;
-}
-
-#tl1 {
-  grid-area: tl1;
-}
-
-#tl2 {
-  grid-area: tl2;
-}
-
-#tl3 {
-  grid-area: tl3;
-}
-
-#Frc {
-  grid-area: frc;
-}
-
-#Cst {
-  grid-area: cst;
-}
-
-#Agi {
-  grid-area: agi;
-}
-
-#Vit {
-  grid-area: vit;
-}
-
-#Int {
-  grid-area: int;
-}
-
-#Pcp {
-  grid-area: pcp;
-}
-
-#Chc {
-  grid-area: chc;
+.noWrap {
+  white-space: nowrap;
 }

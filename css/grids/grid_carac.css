@@ -1,0 +1,70 @@
+#carac {
+  --num-col: 4;
+  --gap: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-col), 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    /* tl1:max Pt, tl2:max 50, tl3:min 10 */
+    "frc cst int tl1"
+    "agi vit pcp tl2"
+    "ck af chc tl3";
+  gap: var(--gap);
+  border: 2px solid black;
+}
+
+/* carac grids items */
+#tl1,
+#tl2,
+#tl3,
+#Frc,
+#Cst,
+#Vit,
+#Int,
+#Pcp,
+#Chc,
+#Agi {
+  text-align: center;
+  align-self: center;
+}
+
+#tl1 {
+  grid-area: tl1;
+}
+
+#tl2 {
+  grid-area: tl2;
+}
+
+#tl3 {
+  grid-area: tl3;
+}
+
+#Frc {
+  grid-area: frc;
+}
+
+#Cst {
+  grid-area: cst;
+}
+
+#Agi {
+  grid-area: agi;
+}
+
+#Vit {
+  grid-area: vit;
+}
+
+#Int {
+  grid-area: int;
+}
+
+#Pcp {
+  grid-area: pcp;
+}
+
+#Chc {
+  grid-area: chc;
+}

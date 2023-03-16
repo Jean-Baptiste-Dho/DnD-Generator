@@ -1,0 +1,27 @@
+#nameGenderNameGenerator {
+  --num-col: 2;
+  --gap: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-col), 1fr);
+  grid-template-rows: 60% 40%;
+  grid-template-areas:
+    /* n:#name, g:#genders, ng:#nameGenerator */
+    "n g"
+    "ng ng";
+  gap: var(--gap);
+  border: 2px solid black;
+}
+
+#nameGenerator {
+  grid-area: ng;
+  justify-content: left;
+}
+
+#name {
+  grid-area: n;
+}
+
+#genders {
+  grid-area: g;
+}

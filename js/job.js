@@ -25,36 +25,36 @@ export let HandleBonusJobs = () => {
     case "Berserker":
       legend.innerHTML = berLegend;
       attribution(10, 0, 1);
-      handleCalcRemaining();
       calcSkill();
+      handleCalcRemaining();
       break;
 
     case "Ranger":
       legend.innerHTML = ranLegend;
       attribution(10, 2, 3);
-      handleCalcRemaining();
       calcSkill();
+      handleCalcRemaining();
       break;
 
     case "Loeknir/Völva":
       legend.innerHTML = lokLegend;
       attribution(10, 4, 5);
-      handleCalcRemaining();
       calcSkill();
+      handleCalcRemaining();
       break;
 
     case "Skald":
       legend.innerHTML = skaLegend;
       attribution(20, 6, 8);
-      handleCalcRemaining();
       calcSkill();
+      handleCalcRemaining();
       break;
 
     default:
       legend.innerHTML = "";
       attribution("", 8);
-      handleCalcRemaining();
       calcSkill();
+      handleCalcRemaining();
       break;
   }
 };

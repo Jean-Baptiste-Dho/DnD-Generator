@@ -1,0 +1,42 @@
+@import url(grid_carac.css);
+@import url(grid_nameGNG.css);
+@import url(grid_jobsTribs.css);
+
+/* export to page_characters.css */
+
+#containerCarac {
+  --gap: 5px;
+  --num-col: 4;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-col), 1fr);
+  grid-template-rows: 1fr 1fr 1fr 2fr;
+  grid-template-areas:
+  /*p:#portrait, ngng:#nameGenderNameGenerator, 
+    jt:#jobsTribes, car:#carac
+  */
+    "p p jt jt "
+    "p p jt jt "
+    "NG NG jt jt "
+    "car car car car ";
+  gap: var(--gap);
+  width: 90%;
+  margin: auto;
+}
+
+/* containerCarac grid items*/
+#portrait {
+  grid-area: p;
+}
+
+#carac {
+  grid-area: car;
+}
+
+#jobsTribs {
+  grid-area: jt;
+}
+
+#nameGenderNameGenerator {
+  grid-area: NG;
+}

@@ -12,19 +12,19 @@ ul {
   display: flex;
   list-style: none;
   justify-content: center;
-  height: 30px;
+  align-items: center;
+  height: 50px;
 }
 
 li {
-  text-decoration: none;
   display: flex;
 }
 
 a {
   color: #fff;
   text-decoration: none;
-  padding-inline: 30px;
   vertical-align: middle;
+  padding-inline: 30px;
 }
 
 h1,
@@ -34,22 +34,4 @@ label {
 
 span {
   height: 17px;
-}
-
-.hideText {
-  color: var(--varColor) !important;
-}
-
-.bonus {
-  color: green;
-  font-weight: bold;
-}
-
-.malus {
-  color: red;
-  font-weight: bold;
-}
-
-.noWrap {
-  white-space: nowrap;
 }
