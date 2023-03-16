@@ -53,12 +53,16 @@ export const handleAutoFill = () => {
 
 /**
  *
- * @param {sting} listCarac Liste de caractéristiques ciblées (cf skills)
- * @param {*} listClass
+ * @param {string} listCarac Liste de caractéristiques ciblées (cf skills)
+ * @param {string} listClass Liste des caractéristique pré-établies (cf value autofill)
  */
 const attribution3 = (listCarac, listClass) => {
   for (let i = 0; i <= 5; i++) {
+    // let tribModif = document.querySelector(`#tribVal${listCarac[i]}`);
+    // let classModif = document.querySelector(`#classVal${listCarac[i]}`);
+
     let autofillAttribution = document.querySelector(`#value${listCarac[i]}`);
     autofillAttribution.value = listClass[i];
+    // }
   }
 };

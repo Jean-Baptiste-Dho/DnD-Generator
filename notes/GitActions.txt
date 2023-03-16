@@ -1,5 +1,5 @@
 git add .
-git commit -m "function autofill et modif total pt départ. modif dynamique de l'affichage de 'unattributed skills points'"
+git commit -m "ajout dossier favicon.ico"
 git push
 
 git add .

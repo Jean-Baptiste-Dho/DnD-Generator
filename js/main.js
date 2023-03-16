@@ -14,8 +14,8 @@ handleImg();
 
 for (let i = 0; i < 6; i++) {
   let path = document.querySelector(`#value${skills[i]}`);
-  path.addEventListener("keyup", calcSkill);
   path.addEventListener("keyup", handleCalcRemaining);
+  path.addEventListener("keyup", calcSkill);
 }
 
 const classPerso = document.querySelector("#list-template-1");

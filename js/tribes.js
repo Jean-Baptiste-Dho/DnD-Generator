@@ -45,14 +45,15 @@ export const HandleBonusTribs = () => {
 
     case "Hanïer":
       legend.innerHTML = hanLegend;
-      attribution2(5, 6, -5, 3);
+      attribution2(10, 6, -10, 3);
+      //attribution2(-10, 1, -10, 3);
       handleCalcRemaining();
       calcSkill();
       break;
 
     default:
       legend.innerHTML = "";
-      attribution2("", 8, "", 8);
+      attribution2(0, 8, 0, 8);
       handleCalcRemaining();
       calcSkill();
       break;
