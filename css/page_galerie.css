@@ -7,11 +7,10 @@ img{
 .container {
     --gap : 10px;
     --num-col : 4;
-    /* --row-height : 200px; */
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(var(--num-col), 1fr);
-    grid-template-rows: var(--row-height);
+    grid-template-rows: 1fr;
     grid-template-areas: 
     
         "d d c e"

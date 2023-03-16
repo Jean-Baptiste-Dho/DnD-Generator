@@ -1,0 +1,14 @@
+
+/* export to page_characters.css */
+
+#check, #af{
+    grid-area: ck;
+    height: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+#af{
+    grid-area: af;
+
+}

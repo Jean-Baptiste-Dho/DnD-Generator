@@ -1,58 +1,55 @@
 :root {
-    --varColor : rgb(232, 210, 170);
+  --varColor: rgb(232, 210, 170);
 }
 body {
-    box-sizing: border-box;
-    margin: 10px;
-    background-color: var(--varColor);
+  box-sizing: border-box;
+  margin: 10px;
+  background-color: var(--varColor);
 }
 
-
 ul {
-    background-color: rgb(177, 128, 39);
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    height: 30px;
+  background-color: rgb(177, 128, 39);
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  height: 30px;
 }
 
 li {
-    text-decoration: none;
-    display: flex;
+  text-decoration: none;
+  display: flex;
 }
 
 a {
-    color: #FFF;
-    text-decoration: none;
-    padding-inline: 30px;
-    vertical-align: middle;
+  color: #fff;
+  text-decoration: none;
+  padding-inline: 30px;
+  vertical-align: middle;
 }
 
-
-h1, label {
-    text-align: center;
+h1,
+label {
+  text-align: center;
 }
 
-#imgSelect {
-    width: 200px;
-    margin-inline: auto;
-  }
-
-span{
-    height: 17px;
+span {
+  height: 17px;
 }
 
 .hideText {
-    color: var(--varColor) !important;
+  color: var(--varColor) !important;
 }
 
 .bonus {
-    color: green !important;
-    font-weight: bold;
+  color: green;
+  font-weight: bold;
 }
 
-.malus{
-    color: red !important;
-    font-weight: bold;
+.malus {
+  color: red;
+  font-weight: bold;
 }
 
+.noWrap {
+  white-space: nowrap;
+}

@@ -1,0 +1,22 @@
+/* export to page_characters.css */
+
+.portrait {
+  grid-area: p;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  height: 100%;
+}
+
+#targetImg {
+  max-width: 300px;
+  min-height: 350px;
+  max-height: 350px;
+  object-fit: contain;
+  margin: auto;
+}
+
+#imgSelect {
+  width: 200px;
+  margin-inline: auto;
+}

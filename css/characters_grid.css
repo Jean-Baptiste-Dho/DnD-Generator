@@ -1,0 +1,33 @@
+/* export to page_characters.css */
+
+.containerCarac {
+  --gap: 5px;
+  --num-col: 4;
+
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(var(--num-col), 1fr);
+  grid-template-rows: 1fr 1fr 3fr 5fr;
+  grid-template-areas:
+    "p p n g "
+    "p p ng ng "
+    "p p jb t "
+    "car car car car ";
+  gap: var(--gap);
+  width: 90%;
+  margin: auto;
+}
+
+#carac {
+  --num-col: 4;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-col), 1fr);
+  grid-template-rows: 3fr 3fr 3fr;
+  grid-template-areas:
+    "frc cst int tl1"
+    "agi vit pcp tl2"
+    "ck af chc tl3";
+  gap: 10px;
+  border: 2px solid black;
+}
