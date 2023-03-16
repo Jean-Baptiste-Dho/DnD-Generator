@@ -1,5 +1,5 @@
 git add .
-git commit -m "organisation des lists class et tribes"
+git commit -m "repositionnement des placements grids_characters"
 git push
 
 git add .
