@@ -1,5 +1,5 @@
 git add .
-git commit -m "repositionnement des placements grids_characters"
+git commit -m "rmaj list job et trib pour inclure "solitaire" et "apatride" au lieu de Vanilla"
 git push
 
 git add .

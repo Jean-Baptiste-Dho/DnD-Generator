@@ -6,7 +6,7 @@ import {
   ranSkills,
   lokSkills,
   skaSkills,
-  vanSkills,
+  solSkills,
 } from "./variables.js";
 
 export const handleAutoFill = () => {
@@ -37,15 +37,15 @@ export const handleAutoFill = () => {
       handleCalcRemaining();
       alert("Vous avez choisi la classe Skald !");
       break;
-    case "Vanilla":
-      attribution3(skills, vanSkills);
+    case "Solitaire":
+      attribution3(skills, solSkills);
       calcSkill();
       handleCalcRemaining();
-      alert("Vous avez choisi la classe Vanilla ! C'est courageux...");
+      alert("Vous avez choisi la classe Vanilla !");
       break;
     default:
       alert(
-        'Choissiez une Classe (recommandé).\n Si vous ne voulez pas adopter de classe ou de peuple, choissiez "Vanilla"'
+        'Choissiez une Classe (recommandé).\n Si vous ne voulez pas adopter de classe ou de peuple, choissiez "Solitaire"/"Apatride"'
       );
       break;
   }

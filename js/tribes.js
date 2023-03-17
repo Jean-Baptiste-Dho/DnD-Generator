@@ -5,6 +5,7 @@ import {
   wulLegend,
   ravLegend,
   hanLegend,
+  apaLegend,
   skills,
 } from "./variables.js";
 
@@ -46,6 +47,14 @@ export const HandleBonusTribes = () => {
     case "Hanïer":
       legend.innerHTML = hanLegend;
       attribution2(10, 6, -10, 3);
+      //attribution2(-10, 1, -10, 3);
+      handleCalcRemaining();
+      calcSkill();
+      break;
+
+    case "Apatride":
+      legend.innerHTML = apaLegend;
+      attribution2(0, 8, 0, 8);
       //attribution2(-10, 1, -10, 3);
       handleCalcRemaining();
       calcSkill();

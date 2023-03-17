@@ -2,7 +2,6 @@ import { handleImg } from "./img.js";
 import { calcSkill } from "./calc_skills.js";
 import { HandleBonusJobs } from "./job.js";
 import { HandleBonusTribes } from "./tribes.js";
-//import { setMarginPadding } from "./mef_span.js";
 import { handleCalcRemaining } from "./remaining_pt.js";
 import { handleAutoFill } from "./autofill.js";
 import { skills } from "./variables.js";
@@ -26,5 +25,3 @@ tribPerso.addEventListener("click", HandleBonusTribes);
 
 const autofill = document.querySelector("#af");
 autofill.addEventListener("click", handleAutoFill);
-
-//setMarginPadding();
