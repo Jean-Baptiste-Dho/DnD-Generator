@@ -12,15 +12,20 @@ export const tribeList = ["Björner", "Wülwer", "Ravner", "Hanïer", "Apatride"
 
 export const sex = ["Masculin", "Féminin", "Différent"];
 
-/* Skills lists  */
+/* Total Point for skills attribution  */
 export let total = 160;
 
-/* Skills lists  */
+/* Total Point for skills attribution  */
+export let maxPt = 50;
 
+/* Total Point for skills attribution  */
+export let minPt = 10;
+
+/* Skills lists  */
 export const skills = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"];
+export const skillsNoLuck = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp"];
 
 /* skills value autofill */
-
 export const berSkills = [40, 30, 20, 20, 10, 20];
 export const ranSkills = [20, 20, 30, 30, 10, 30];
 export const lokSkills = [10, 20, 20, 20, 40, 30];

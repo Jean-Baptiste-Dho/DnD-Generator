@@ -10,7 +10,8 @@ import { verifAttribution } from "./verification.js";
 
 initialisation();
 
-verifAttribution();
+const verifButton = document.querySelector("#check");
+verifButton.addEventListener("click", verifAttribution);
 
 const img = document.querySelector("#imgSelect");
 img.addEventListener("click", handleImg);
@@ -29,5 +30,5 @@ classPerso.addEventListener("click", HandleBonusJobs);
 const tribPerso = document.querySelector("#list-template-2");
 tribPerso.addEventListener("click", HandleBonusTribes);
 
-const autofill = document.querySelector("#af");
-autofill.addEventListener("click", handleAutoFill);
+const autofillButton = document.querySelector("#af");
+autofillButton.addEventListener("click", handleAutoFill);

@@ -1,4 +1,4 @@
-import { skills } from "./variables.js";
+import { skills, maxPt } from "./variables.js";
 /**
  * recupère les valeurs dans les bonus/malus et de l'input pour faire le calcul des pt restants
  */
@@ -18,7 +18,7 @@ export const handleCalcRemaining = () => {
         10
       );
 
-      let total = 50 - (target2 + target3 + target4);
+      let total = maxPt - (target2 + target3 + target4);
 
       const target1 = document.querySelector(`#maxAvailablePt${skills[i]}`);
 
@@ -27,7 +27,6 @@ export const handleCalcRemaining = () => {
       } else if (total < 0) {
         target1.innerHTML = `remove ${total * -1} point(s)`;
       }
-    } else {
     }
   }
 };
