@@ -39,7 +39,7 @@ export const lokLegend =
   "Le Loeknir, et son alter-ego feminin : la Völva, sont un relai à la magie des dieux. Très cultivés et curieux par nature, ils adorent lire et \"dévorent\" tout ouvrage qui tombe entre leurs mains. Représentants de l'Althing, ils ont un devoir de faire appliquer la lois dès qu'ils sont temoins d'une faute envers les dieux ou les hommes.";
 
 export const skaLegend =
-  "Le Skald est un esprit libre par définition. Personnalité extravagante, protégé des dieux, il ne manque pas de se donner en spectacle dès qu'il le peut. La dextérité naturelle et son ouïe parfaite en fait un musicien née qui maitrise facilement n'importe quel instruments. La magie est un atout qui leurs sert dans les spectacles ou les combats.";
+  "Le Skald est un esprit libre par définition. Personnalité extravagante, protégé des dieux, il se donne en spectacle dès qu'il le peut. La dextérité naturelle et son ouïe parfaite en fait un musicien née qui maitrise facilement n'importe quel instruments. La magie est un atout qui leurs sert dans les spectacles ou les combats.";
 
 export const solLegend =
   "Le solitaire vient de nulle part et partout à la fois. On dit qu'il est l'incarnation d'un esprit libre qui a pris en main son destin. Il n'a ni force ni faiblesse. Les dieux lui ont octroyé de la chance pour l'aider dans sa quête, quelle q'elle soit.";

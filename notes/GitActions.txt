@@ -1,5 +1,5 @@
 git add .
-git commit -m "rmaj list job et trib pour inclure "solitaire" et "apatride" au lieu de Vanilla"
+git commit -m "debut test verification.js"
 git push
 
 git add .

@@ -1,14 +1,14 @@
+@import url("../variablesCss.css");
+
 :root {
   --num-col: 1;
-  --propLign: 10% 45% 45%;
 }
 
 #jobs {
   display: grid;
   grid-template-columns: --num-col;
-  grid-template-rows: var(--propLign);
+  grid-template-rows: var(--propLignJ);
   grid-template-areas:
-        /* js:#divSelect-1, jl:#legend-1, ji:#imgList-1*/
     "js"
     "jl"
     "ji";

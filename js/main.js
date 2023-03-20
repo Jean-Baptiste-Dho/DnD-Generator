@@ -6,10 +6,16 @@ import { handleCalcRemaining } from "./remaining_pt.js";
 import { handleAutoFill } from "./autofill.js";
 import { skills } from "./variables.js";
 import { initialisation } from "./initialisation.js";
+import { verifAttribution } from "./verification.js";
 
 initialisation();
 
-handleImg();
+verifAttribution();
+
+const img = document.querySelector("#imgSelect");
+img.addEventListener("click", handleImg);
+const img2 = document.querySelector("#list-template-2");
+img2.addEventListener("click", handleImg);
 
 for (let i = 0; i < 6; i++) {
   let path = document.querySelector(`#value${skills[i]}`);

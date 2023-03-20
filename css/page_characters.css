@@ -20,3 +20,7 @@
 .noWrap {
   white-space: nowrap;
 }
+
+.legend {
+  margin: 5px;
+}

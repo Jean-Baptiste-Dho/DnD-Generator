@@ -9,11 +9,6 @@ import {
   skills,
 } from "./variables.js";
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const tribPerso = document.querySelector("#list-template-2");
-//   tribPerso.addEventListener("click", HandleBonusTribes);
-// });
-
 export const HandleBonusTribes = () => {
   const tribPerso = document.querySelector("#list-template-2");
   const legend = document.querySelector("#legend-2");

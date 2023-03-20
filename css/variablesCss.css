@@ -1,0 +1,7 @@
+:root {
+  /*export @ grid-jobs.css & grid_tribes.css*/
+
+  /* largeur rows :  menu, texte, image*/
+  --propLignJ: 10% 50% 40%;
+  --propLignT: 10% 30% 60%;
+}

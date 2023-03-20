@@ -17,7 +17,7 @@ export const generateList = (target, choiceListe, labelTitle, itération) => {
   let i = 0;
   const p = clone.querySelector(".legend");
 
-  img.id = `imgList-` + itération;
+  img.id = `targetImgList-` + itération;
 
   label.textContent = labelTitle;
   select.id = `list-template-` + itération;
