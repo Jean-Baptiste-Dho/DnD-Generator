@@ -17,30 +17,35 @@ export const handleAutoFill = () => {
       attribution3(skills, berSkills);
       calcSkill();
       handleCalcRemaining();
+      setStyleUnattributedPt();
       alert("Vous avez choisi la classe Berserker !");
       break;
     case "Ranger":
       attribution3(skills, ranSkills);
       calcSkill();
       handleCalcRemaining();
+      setStyleUnattributedPt();
       alert("Vous avez choisi la classe Ranger !");
       break;
     case "Loeknir/Völva":
       attribution3(skills, lokSkills);
       calcSkill();
       handleCalcRemaining();
+      setStyleUnattributedPt();
       alert("Vous avez choisi la classe Loeknir/Völva !");
       break;
     case "Skald":
       attribution3(skills, skaSkills);
       calcSkill();
       handleCalcRemaining();
+      setStyleUnattributedPt();
       alert("Vous avez choisi la classe Skald !");
       break;
     case "Solitaire":
       attribution3(skills, solSkills);
       calcSkill();
       handleCalcRemaining();
+      setStyleUnattributedPt();
       alert("Vous avez choisi la classe Vanilla !");
       break;
     default:
@@ -64,5 +69,14 @@ const attribution3 = (listCarac, listClass) => {
     let autofillAttribution = document.querySelector(`#value${listCarac[i]}`);
     autofillAttribution.value = listClass[i];
     // }
+  }
+};
+
+const setStyleUnattributedPt = () => {
+  target = document.querySelector("#calcSkillTarget");
+  if (target.innerHTML < 0) {
+    target.style.color = "red";
+  } else {
+    target.style.color = "green";
   }
 };

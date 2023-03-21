@@ -35,13 +35,13 @@ export const solSkills = [25, 25, 25, 25, 25, 25];
 /* Caracters descriptions */
 
 export const berLegend =
-  "Le Berserker est une force de la nature. Il est née avec une musculature imposante qui lui octroie une facilité naturelle aux taches physiques. Son corps est un temple : il est sacré. C'est son meilleur outil dont il ne néglige jamais l'entrainement. Si seulement il prenait son éducation intellectuelle avec la même motivation...";
+  "Le Berserker est une force de la nature. Il est née avec une musculature imposante qui lui octroie une facilité naturelle aux taches physiques. Son corps est un temple : il est sacré. C'est son meilleur outil dont il ne néglige jamais l'entrainement. la réflexion n'est pas son fort, sauf quand on parle de combat.";
 
 export const ranLegend =
-  "Le Ranger est une ombre. Plus à l'aise loin des regards que sous le feu des projecteurs, il aussi agile avec un arc qu’une trousse de crochetage. Il a appris à utiliser ses mains agiles pour réaliser des tâches délicates. La magie n'est pas son fort car trop instable et trop peu discrête à son goût.";
+  "Le Ranger est une ombre. Plus à l'aise loin des regards que sous le feu des projecteurs, il aussi agile avec un arc qu’une trousse de crochetage. Il a appris à utiliser ses mains agiles pour réaliser des tâches délicates. La magie n'est pas son fort car trop instable et voyante à son goût.";
 
 export const lokLegend =
-  "Le Loeknir, et son alter-ego feminin : la Völva, sont un relai à la magie des dieux. Très cultivés et curieux par nature, ils adorent lire et \"dévorent\" tout ouvrage qui tombe entre leurs mains. Représentants de l'Althing, ils ont un devoir de faire appliquer la lois dès qu'ils sont temoins d'une faute envers les dieux ou les hommes.";
+  "Le Loeknir, et son alter-ego feminin : la Völva, sont des relais à la magie des dieux. Très cultivés et curieux par nature, ils adorent lire et \"dévorent\" tout ouvrage qui tombe entre leurs mains. Représentants de l'Althing, ils ont un devoir de faire appliquer la lois dès qu'ils sont temoins d'une faute envers les dieux ou les hommes.";
 
 export const skaLegend =
   "Le Skald est un esprit libre par définition. Personnalité extravagante, protégé des dieux, il se donne en spectacle dès qu'il le peut. La dextérité naturelle et son ouïe parfaite en fait un musicien née qui maitrise facilement n'importe quel instruments. La magie est un atout qui leurs sert dans les spectacles ou les combats.";
@@ -61,7 +61,7 @@ export const ravLegend =
   "Tribu du Corbeau. Les natifs de ce peuple sont particulièrement proche des dieux. Leur éducation stricte dans les domaines intellectuels et legislatif est tel qu'ils n'ont pas beaucoup de temps à consacrer aux activités physiques. ils forment beaucoups de représentants de l'Althing.";
 
 export const hanLegend =
-  "Tribu du Coq. Les natifs de ce peuple sont des grandes gueules nées sous une bonne étoile; Leur chance insolente en a ruiné plus d'un. Ils passent rarement inaperçu à cause de leur tempérament extravagant. Bon vivants, ils ont horreur de se presser.";
+  "Tribu du Coq. Les natifs de ce peuple sont des grandes gueules nées sous une bonne étoile; Leur chance insolente en a ruiné plus d'un. Ils passent rarement inaperçu à cause de leur tempérament extravagant. Esprits indépendants, ils ont horreur qu'on leur impose de faire des choses comme... de se presser.";
 
 export const apaLegend =
-  "Les apatrides n'appartiennent à aucune tribu, ils ne génèrent ni mépris ni sympathie aux personnes qu'ils côtoient. Ils servent souvent d'homme à tout faire grâce à leur faculté de s'adapter aux besoins du moment.";
+  "Les apatrides n'appartiennent à aucune tribu par choix, par croyance ou par obligation... Souvent orphelins, ils ont toujours appris a ne compter que sur eux-mêmes pour survivre. Bon nombre d'aventurier deviennent apatride pour ne pas subir les pressions sociales ou morales de leur tribut d'origine";
