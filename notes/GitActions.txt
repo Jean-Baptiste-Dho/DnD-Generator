@@ -1,5 +1,5 @@
 git add .
-git commit -m "vérif generale. réparation fichier calcSkill qui ne prennait pas la CHC en compte."
+git commit -m "creation de la suite des element de la page. hover messages sur skills"
 git push
 
 git add .

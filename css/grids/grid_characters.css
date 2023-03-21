@@ -16,13 +16,11 @@
   /*p:#portrait, ngng:#nameGenderNameGenerator, 
     jt:#jobsTribes, car:#carac
   */
-    "p p jb t "
-    "p p jb t "
     "p p NG NG "
+    "p p jb t "
+    "p p jb t "
     "car car car car ";
   gap: var(--gap);
-  width: 90%;
-  margin: auto;
 }
 
 /* containerCarac grid items*/

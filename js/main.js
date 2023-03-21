@@ -7,8 +7,11 @@ import { handleAutoFill } from "./autofill.js";
 import { skills } from "./variables.js";
 import { initialisation } from "./initialisation.js";
 import { verifAttribution } from "./verification.js";
+import { setSkillsTitle } from "./hover_messages.js";
 
 initialisation();
+
+setSkillsTitle();
 
 const verifButton = document.querySelector("#check");
 verifButton.addEventListener("click", verifAttribution);

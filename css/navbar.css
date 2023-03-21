@@ -1,0 +1,19 @@
+#navBar ul {
+  background-color: rgb(177, 128, 39);
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.nav li {
+  display: flex;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  vertical-align: baseline;
+  padding-inline: 30px;
+}

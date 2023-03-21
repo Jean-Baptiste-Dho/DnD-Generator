@@ -20,7 +20,7 @@
 <body>
 
     <div id="navBar">
-        <ul>
+        <ul class="nav">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="perso.html">Personnages</a></li>
             <li><a href="gallerie.html">Gallerie photo dnd</a></li>
@@ -28,9 +28,38 @@
 
     </div>
 
-    <h1>CHARACTER GENERATOR</h1>
+    <header class="block center">
+        <h1>CHARACTER GENERATOR</h1>
+        <h2>Welcome to the character generator.</h2>
+        <p>Here you are, in the forge of gods ! You're about to create your incarnation for the gaming sessions. Just
+            follow this few steps : </p>
+        <div id="listBlock">
+            <ul>
+                <li>FIRST, you'll have to choose a picture and set your name. (the gender is only needed for the name
+                    generator's. It has no impact on the game.)</li>
+                <li>SECOND, you can choose a class. It will define your natural skills and a double bonus on your stats.
+                    If
+                    you
+                    don't want any kind of help, you can choose "Apatride", that way, you'll got only a Chc small bonus
+                    (you
+                    gonna need it ! Trust me...).</li>
+                <li>THIRD, you can choose a tribe. It will grant you with a specific education bonus. On the other hand,
+                    you'll
+                    get a malus on an opposite skill (nobody's perfect).</li>
+            </ul>
+            <ul>
+                <li>FOURTH, you'll have to set none but 6 differents skills that you'll use on your journey. To
+                    understand each and every skills capabilities, go <a id="link" href="#">HERE</a> first. (hover the
+                    skill's name for a little reminder) </li>
+                <li>FIFTH, and before create your next incarnation, check the fighting skills and Transcendence ability.
+                    They'll determine your fighting style. They can't be change ! Be careful !</li>
+                <li>LAST, click "Create" to give life to your avatar ! Self-generated skills, as luck, starting gold and
+                    destiny Pt will be set here.</li>
+            </ul>
+        </div>
+    </header>
 
-    <div id="containerCarac">
+    <div id="containerCarac" class="block">
         <div id="portrait">
             <label for="imgPortrait">Choose a picture</label>
             <select name="imgPortrait" id="imgSelect">
@@ -70,24 +99,36 @@
             <h3 id="tl1">Unattributed<br>skills points = <br><span id="calcSkillTarget" value=""></span></h3>
             <h4 id="tl2">Maximum 50pt/skill.<br>(including bonus) </h4>
             <h4 id="tl3">Minimum 10pt/skill.<br>(including malus)</h4>
-            <div id="Frc" class="noWrap">
+            <div id="Frc" class="noWrap" title="">
             </div>
-            <div id="Cst" class="noWrap">
+            <div id="Cst" class="noWrap" title="">
             </div>
-            <div id="Int" class="noWrap">
+            <div id="Int" class="noWrap" title="">
             </div>
-            <div id="Agi" class="noWrap">
+            <div id="Agi" class="noWrap" title="">
             </div>
-            <div id="Vit" class="noWrap">
+            <div id="Vit" class="noWrap" title="">
             </div>
-            <div id="Pcp" class="noWrap">
+            <div id="Pcp" class="noWrap" title="">
             </div>
-            <div id="Chc" class="noWrap">
+            <div id="Chc" class="noWrap" title="">
             </div>
-            <input id="check" type="button" name="verifier" value="Vérifier">
+            <input id="check" type="button" name="verifier" value="Check">
             <input id="af" type="button" name="autocompleted" value="Auto-fill">
         </div>
     </div>
+    <section class="block center">
+        <h1> Here are the fighting technics of your character, according to your selected class and tribe.<br>They
+            cannot
+            be changed later, so choose wisely !</h1>
+
+        <h2 class="upperCase">Fighting technics & Knowledge</h2>
+        <h4>The rewards for your training, education and natural skills</h4>
+
+        <h2 class="upperCase">Transcendence</h2>
+        <h4>When your soul </h4>
+
+    </section>
 
 
 </body>

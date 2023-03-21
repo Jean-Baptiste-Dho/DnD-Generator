@@ -1,37 +1,60 @@
+@import url(navbar.css);
+
+/* variables */
+
 :root {
   --varColor: rgb(232, 210, 170);
 }
+
+/* global style */
+
 body {
   box-sizing: border-box;
   margin: 10px;
   background-color: var(--varColor);
 }
 
-ul {
-  background-color: rgb(177, 128, 39);
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-}
-
-li {
-  display: flex;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-  vertical-align: middle;
-  padding-inline: 30px;
-}
-
-h1,
 label {
   text-align: center;
 }
 
 span {
   height: 17px;
+}
+
+header {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+header ul {
+  width: 40%;
+  text-align: left;
+  margin-inline: auto;
+  margin-block-start: 0px;
+}
+
+/* id stylle */
+
+#link {
+  color: red;
+  padding: 2px;
+}
+
+#listBlock {
+  display: flex;
+  align-items: start;
+}
+
+/* class style */
+
+.block {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.upperCase {
+  text-transform: uppercase;
 }

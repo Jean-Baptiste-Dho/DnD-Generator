@@ -32,7 +32,13 @@ export const lokSkills = [10, 20, 20, 20, 40, 30];
 export const skaSkills = [30, 20, 20, 20, 30, 20];
 export const solSkills = [25, 25, 25, 25, 25, 25];
 
-/* Caracters descriptions */
+/* 
+*
+*
+Caracters descriptions 
+*
+*
+*/
 
 export const berLegend =
   "Le Berserker est une force de la nature. Il est née avec une musculature imposante qui lui octroie une facilité naturelle aux taches physiques. Son corps est un temple : il est sacré. C'est son meilleur outil dont il ne néglige jamais l'entrainement. la réflexion n'est pas son fort, sauf quand on parle de combat.";
@@ -49,7 +55,13 @@ export const skaLegend =
 export const solLegend =
   "Le solitaire vient de nulle part et partout à la fois. On dit qu'il est l'incarnation d'un esprit libre qui a pris en main son destin. Il n'a ni force ni faiblesse. Les dieux lui ont octroyé de la chance pour l'aider dans sa quête, quelle q'elle soit.";
 
-/* Tribes description*/
+/*
+*
+*
+Tribes description
+*
+*
+*/
 
 export const bjoLegend =
   "Tribu de l'Ours. Les natifs de ce peuple sont naturellement bien bâtis; Avec une musculature digne d'un ours, ils ne sont que très rarement chétifs ou faible physiquement. malheureusement, ils agissent le plus souvent avant de penser.";
@@ -65,3 +77,26 @@ export const hanLegend =
 
 export const apaLegend =
   "Les apatrides n'appartiennent à aucune tribu par choix, par croyance ou par obligation... Souvent orphelins, ils ont toujours appris a ne compter que sur eux-mêmes pour survivre. Bon nombre d'aventurier deviennent apatride pour ne pas subir les pressions sociales ou morales de leur tribut d'origine";
+
+/*
+  *
+  *
+  hover messages for skills (explain with tomato)
+  * 
+  * 
+  */
+
+export const frcTomato =
+  "La force permet \nde broyer une tomate\nà main nue...";
+export const cstTomato =
+  "La constitution permet \nde résister à une tomate\npourrie ou empoisonnée.";
+export const agiTomato =
+  "L'agilité permet \nde découper une tomate\nsans se blesser.";
+export const vitTomato =
+  "La vitesse permet \nde se saisir rapidement\nou éviter de justesse une tomate.";
+export const intTomato =
+  "L'intelligence permet \nd'utiliser la magie pour faire\n pousser une tomate.";
+export const pcpTomato =
+  "La perception permet \nde reconnaitre une tomate\nd'une pomme.";
+export const chcTomato =
+  "La chance permet \nde trouver une tomate\ndans un sac de pomme.";
