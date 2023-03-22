@@ -1,4 +1,5 @@
 import { calcSkill } from "./calc_skills.js";
+import { banana } from "./cheminsVariables.js";
 import { handleCalcRemaining } from "./remaining_pt.js";
 import {
   skills,
@@ -8,44 +9,44 @@ import {
   skaSkills,
   solSkills,
 } from "./variables.js";
+import { verification } from "./verification.js";
 
 export const handleAutoFill = () => {
   const classPerso = document.querySelector("#list-template-1");
-
   switch (classPerso.value) {
     case "Berserker":
       attribution3(skills, berSkills);
       calcSkill();
       handleCalcRemaining();
-      setStyleUnattributedPt();
+      verification();
       alert("Vous avez choisi la classe Berserker !");
       break;
     case "Ranger":
       attribution3(skills, ranSkills);
       calcSkill();
       handleCalcRemaining();
-      setStyleUnattributedPt();
+      verification();
       alert("Vous avez choisi la classe Ranger !");
       break;
     case "Loeknir/Völva":
       attribution3(skills, lokSkills);
       calcSkill();
       handleCalcRemaining();
-      setStyleUnattributedPt();
+      verification();
       alert("Vous avez choisi la classe Loeknir/Völva !");
       break;
     case "Skald":
       attribution3(skills, skaSkills);
       calcSkill();
       handleCalcRemaining();
-      setStyleUnattributedPt();
+      verification();
       alert("Vous avez choisi la classe Skald !");
       break;
     case "Solitaire":
       attribution3(skills, solSkills);
       calcSkill();
       handleCalcRemaining();
-      setStyleUnattributedPt();
+      verification();
       alert("Vous avez choisi la classe Vanilla !");
       break;
     default:
@@ -69,14 +70,5 @@ const attribution3 = (listCarac, listClass) => {
     let autofillAttribution = document.querySelector(`#value${listCarac[i]}`);
     autofillAttribution.value = listClass[i];
     // }
-  }
-};
-
-const setStyleUnattributedPt = () => {
-  target = document.querySelector("#calcSkillTarget");
-  if (target.innerHTML < 0) {
-    target.style.color = "red";
-  } else {
-    target.style.color = "green";
   }
 };

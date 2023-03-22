@@ -1,14 +1,16 @@
 import { skillsNoLuck, maxPt, minPt } from "./variables.js";
 
-export const verifAttribution = () => {
+export const verification = () => {
   const unattributePt = document.querySelector("#tl1");
   const unattributePtValue = document.querySelector("#calcSkillTarget");
   const max50Pt = document.querySelector("#tl2");
   const min10Pt = document.querySelector("#tl3");
+  let validator = 0;
 
   if (unattributePtValue.innerHTML == 0) {
     unattributePt.style.color = "green";
     unattributePtValue.style.color = "green";
+    validator += 1;
   } else {
     unattributePt.style.color = "red";
   }
@@ -26,15 +28,12 @@ export const verifAttribution = () => {
       document.querySelector(`#value${skillsNoLuck[i]}`).value,
       10
     );
-    let maxAvalaiblePt = parseInt(
-      document.querySelector(`#maxAvailablePt${skillsNoLuck[i]}`).innerHTML,
-      10
-    );
     let total = maxPt - (target2 + target3 + target4);
 
     if (total <= maxPt - minPt && total >= 0) {
       min10Pt.style.color = "green";
       max50Pt.style.color = "green";
+      validator++;
     } else if (total > maxPt - minPt) {
       max50Pt.style.color = "green";
       min10Pt.style.color = "red";
@@ -43,8 +42,9 @@ export const verifAttribution = () => {
       min10Pt.style.color = "green";
       break;
     } else {
-      max50Pt.style.color = "purple";
-      min10Pt.style.color = "purple";
+      max50Pt.style.color = "red";
+      min10Pt.style.color = "red";
     }
   }
+  console.log(validator);
 };
