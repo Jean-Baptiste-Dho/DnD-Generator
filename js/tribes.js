@@ -10,53 +10,50 @@ import {
 } from "./variables.js";
 
 export const HandleBonusTribes = () => {
-  const tribPerso = document.querySelector("#list-template-2");
-  const legend = document.querySelector("#legend-2");
-  switch (tribPerso.value) {
+  switch (listTemplate2.value) {
     /*
     skills = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"]
                 0      1      2      3      4      5      6 
     */
 
     case "Björner":
-      legend.innerHTML = bjoLegend;
+      legend2.innerHTML = bjoLegend;
       attribution2(5, 0, -5, 4);
       handleCalcRemaining();
       calcSkill();
       break;
 
     case "Wülwer":
-      legend.innerHTML = wulLegend;
+      legend2.innerHTML = wulLegend;
       attribution2(5, 5, -5, 1);
       handleCalcRemaining();
       calcSkill();
       break;
 
     case "Ravner":
-      legend.innerHTML = ravLegend;
+      legend2.innerHTML = ravLegend;
       attribution2(5, 4, -5, 0);
       handleCalcRemaining();
       calcSkill();
       break;
 
     case "Hanïer":
-      legend.innerHTML = hanLegend;
+      legend2.innerHTML = hanLegend;
       attribution2(10, 6, -10, 3);
-      //attribution2(-10, 1, -10, 3);
       handleCalcRemaining();
       calcSkill();
       break;
 
     case "Apatride":
-      legend.innerHTML = apaLegend;
+      legend2.innerHTML = apaLegend;
       attribution2(0, 8, 0, 8);
-      //attribution2(-10, 1, -10, 3);
       handleCalcRemaining();
       calcSkill();
       break;
 
     default:
-      legend.innerHTML = "";
+      legend2.innerHTML =
+        "Choissiez une classe pour en apprendre plus sur ses forces et faiblesses.";
       attribution2(0, 8, 0, 8);
       handleCalcRemaining();
       calcSkill();

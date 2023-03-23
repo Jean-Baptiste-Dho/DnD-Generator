@@ -12,7 +12,6 @@ import {
 export const setSkillsTitle = () => {
   for (let i = 0; i <= 6; i++) {
     const target = document.querySelector(`#${skills[i]}`);
-    console.log(target);
     switch (target.id) {
       case "Frc":
         target.title = frcTomato;

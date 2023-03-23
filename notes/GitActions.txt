@@ -1,5 +1,5 @@
 git add .
-git commit -m "gestion des bug et factorisation des fonctions sur l'event keyup -> main.js"
+git commit -m "suppression des chemin de variable pour chemin direct avec l'id de l'objet."
 git push
 
 git add .

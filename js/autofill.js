@@ -1,5 +1,4 @@
 import { calcSkill } from "./calc_skills.js";
-import { banana } from "./cheminsVariables.js";
 import { handleCalcRemaining } from "./remaining_pt.js";
 import {
   skills,
@@ -12,8 +11,7 @@ import {
 import { verification } from "./verification.js";
 
 export const handleAutoFill = () => {
-  const classPerso = document.querySelector("#list-template-1");
-  switch (classPerso.value) {
+  switch (listTemplate1.value) {
     case "Berserker":
       attribution3(skills, berSkills);
       calcSkill();

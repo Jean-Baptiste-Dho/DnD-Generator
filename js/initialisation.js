@@ -11,19 +11,15 @@ export const initialisation = () => {
     );
 
     classVal.value = 0;
-    //classVal.innerHTML = "0";
+    classVal.innerHTML = "0";
     tribVal.value = 0;
-    //tribVal.innerHTML = "0";
+    tribVal.innerHTML = "0";
     if (skills[i] !== "Chc") {
       maxAvalaiblePt.innerHTML = maxPt;
     }
   }
-  document.querySelector(`#calcSkillTarget`).innerHTML = total;
-  document.querySelector(`#calcSkillTarget`).value = total;
-  document.querySelector(
-    `#tl2`
-  ).innerHTML = `Maximum ${maxPt}pt / skills.\n(including bonus)`;
-  document.querySelector(
-    `#tl3`
-  ).innerHTML = `Minimum ${minPt}pt / skills.\n(including malus)`;
+  calcSkillTarget.innerHTML = total;
+  calcSkillTarget.value = total;
+  tl2.innerHTML = `Maximum ${maxPt}pt / skills.\n(including bonus)`;
+  tl3.innerHTML = `Minimum ${minPt}pt / skills.\n(including malus)`;
 };

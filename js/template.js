@@ -6,10 +6,10 @@
  * @param {int} itération template iteration
  */
 export const generateList = (target, choiceListe, labelTitle, itération) => {
-  const template = document.querySelector("#list-template");
+  const template = document.querySelector("#listTemplate");
   const clone = document.importNode(template.content, true);
   const label = clone.querySelector(".label");
-  const select = clone.querySelector("#list-template-id");
+  const select = clone.querySelector("#listTemplateId");
   const img = clone.querySelector("#imgList");
   const div = clone.querySelector("#divSelect");
   const targetDiv = document.querySelector(`#${target}`);
@@ -17,22 +17,22 @@ export const generateList = (target, choiceListe, labelTitle, itération) => {
   let i = 0;
   const p = clone.querySelector(".legend");
 
-  img.id = `targetImgList-` + itération;
+  img.id = `targetImgList` + itération;
 
   label.textContent = labelTitle;
-  select.id = `list-template-` + itération;
-  select.value = `list-template-` + itération;
+  select.id = `listTemplate` + itération;
+  select.value = `listTemplate` + itération;
   div.id = `divSelect-` + itération;
 
   for (i; i < nbItems; i++) {
     let option = document.createElement("option");
     option.text = choiceListe[i];
-    option.className = "list-template-" + itération + "-option";
+    option.className = "listTemplate" + itération + "Option";
     select.add(option);
   }
 
   if (target !== "genders") {
-    p.id = `legend-` + itération;
+    p.id = `legend` + itération;
     img.className = "imgList";
   } else {
     clone.removeChild(p);
@@ -49,7 +49,7 @@ export const generateList = (target, choiceListe, labelTitle, itération) => {
  */
 export const generateCarac = (target, carac) => {
   if (target != "Chc" || carac != "Chc") {
-    const template = document.querySelector("#carac-template");
+    const template = document.querySelector("#caracTemplate");
     const clone = document.importNode(template.content, true);
 
     const targetDiv = document.querySelector(`#${target}`);
@@ -79,7 +79,7 @@ export const generateCarac = (target, carac) => {
 
     targetDiv.appendChild(clone);
   } else {
-    const template = document.querySelector("#carac-template");
+    const template = document.querySelector("#caracTemplate");
     const clone = document.importNode(template.content, true);
 
     const targetDiv = document.querySelector(`#${target}`);
@@ -100,7 +100,7 @@ export const generateCarac = (target, carac) => {
     const span4 = clone.querySelector("#tribVal");
     span4.id = "tribVal" + carac;
 
-    const div = clone.querySelector("#div-template");
+    const div = clone.querySelector("#divTemplate");
     clone.removeChild(div);
 
     targetDiv.appendChild(clone);

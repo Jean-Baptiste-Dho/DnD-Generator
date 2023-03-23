@@ -1,4 +1,3 @@
-
 /* Templates list items */
 
 export const jobsList = [

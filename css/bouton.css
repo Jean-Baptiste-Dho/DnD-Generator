@@ -1,14 +1,14 @@
 /* export to page_characters.css */
 
 #check,
-#af {
+#autoFillButton {
   grid-area: ck;
   height: 30px;
   width: 80%;
   margin: auto;
 }
 
-#af {
+#autoFillButton {
   grid-area: af;
 }
 

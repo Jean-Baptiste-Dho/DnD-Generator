@@ -10,56 +10,55 @@ import {
 } from "./variables.js";
 
 // document.addEventListener("DOMContentLoaded", () => {
-//   const classPerso = document.querySelector("#list-template-1");
+//   const classPerso = document.querySelector("#listTemplate1");
 //   classPerso.addEventListener("click", HandleBonusJobs);
 // });
 
 export let HandleBonusJobs = () => {
-  const legend = document.querySelector("#legend-1");
-  const classPerso = document.querySelector("#list-template-1");
-  switch (classPerso.value) {
+  switch (listTemplate1.value) {
     /* 
     skills = ["Frc", "Cst", "Agi", "Vit", "Int", "Pcp", "Chc"]
                 0      1      2      3      4      5      6 
     */
 
     case "Berserker":
-      legend.innerHTML = berLegend;
+      legend1.innerHTML = berLegend;
       attribution(10, 0, 1);
       calcSkill();
       handleCalcRemaining();
       break;
 
     case "Ranger":
-      legend.innerHTML = ranLegend;
+      legend1.innerHTML = ranLegend;
       attribution(10, 2, 3);
       calcSkill();
       handleCalcRemaining();
       break;
 
     case "Loeknir/Völva":
-      legend.innerHTML = lokLegend;
+      legend1.innerHTML = lokLegend;
       attribution(10, 4, 5);
       calcSkill();
       handleCalcRemaining();
       break;
 
     case "Skald":
-      legend.innerHTML = skaLegend;
+      legend1.innerHTML = skaLegend;
       attribution(20, 6, 8);
       calcSkill();
       handleCalcRemaining();
       break;
 
     case "Solitaire":
-      legend.innerHTML = solLegend;
+      legend1.innerHTML = solLegend;
       attribution(10, 6, 8);
       calcSkill();
       handleCalcRemaining();
       break;
 
     default:
-      legend.innerHTML = "";
+      legend1.innerHTML =
+        "Choissiez un peuple pour en apprendre plus sur son fonctionnement.";
       attribution("", 8);
       calcSkill();
       handleCalcRemaining();
