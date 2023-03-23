@@ -8,6 +8,7 @@ import {
   apaLegend,
   skills,
 } from "./variables.js";
+import { verification } from "./verification.js";
 
 export const HandleBonusTribes = () => {
   switch (listTemplate2.value) {
@@ -21,6 +22,7 @@ export const HandleBonusTribes = () => {
       attribution2(5, 0, -5, 4);
       handleCalcRemaining();
       calcSkill();
+      verification();
       break;
 
     case "Wülwer":
@@ -28,6 +30,7 @@ export const HandleBonusTribes = () => {
       attribution2(5, 5, -5, 1);
       handleCalcRemaining();
       calcSkill();
+      verification();
       break;
 
     case "Ravner":
@@ -35,6 +38,7 @@ export const HandleBonusTribes = () => {
       attribution2(5, 4, -5, 0);
       handleCalcRemaining();
       calcSkill();
+      verification();
       break;
 
     case "Hanïer":
@@ -42,6 +46,7 @@ export const HandleBonusTribes = () => {
       attribution2(10, 6, -10, 3);
       handleCalcRemaining();
       calcSkill();
+      verification();
       break;
 
     case "Apatride":
@@ -49,6 +54,7 @@ export const HandleBonusTribes = () => {
       attribution2(0, 8, 0, 8);
       handleCalcRemaining();
       calcSkill();
+      verification();
       break;
 
     default:

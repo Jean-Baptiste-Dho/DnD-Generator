@@ -7,11 +7,11 @@ import { handleAutoFill } from "./autofill.js";
 import { skills } from "./variables.js";
 import { initialisation } from "./initialisation.js";
 import { verification, alertCheck } from "./verification.js";
-import { setSkillsTitle } from "./hover_messages.js";
+import { setHoverSkillsTitle } from "./hover_messages.js";
 
 initialisation();
 
-setSkillsTitle();
+setHoverSkillsTitle();
 
 for (let i = 0; i < 6; i++) {
   let path = document.querySelector(`#value${skills[i]}`);
@@ -32,8 +32,7 @@ listTemplate2.addEventListener("click", () => {
 autoFillButton.addEventListener("click", handleAutoFill);
 
 check.addEventListener("click", () => {
-  let validator = verification();
-  alertCheck(validator);
+  alertCheck(verification());
 });
 
 imgSelect.addEventListener("click", handleImg);

@@ -9,7 +9,7 @@ import {
   vitTomato,
 } from "./variables.js";
 
-export const setSkillsTitle = () => {
+export const setHoverSkillsTitle = () => {
   for (let i = 0; i <= 6; i++) {
     const target = document.querySelector(`#${skills[i]}`);
     switch (target.id) {

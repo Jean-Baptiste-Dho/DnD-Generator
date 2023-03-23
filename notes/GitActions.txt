@@ -1,5 +1,5 @@
 git add .
-git commit -m "suppression des chemin de variable pour chemin direct avec l'id de l'objet."
+git commit -m "correction des fonctions avec ajout de bonus.css /malus.css pour visuel. implément des validator encore non fonctionnel"
 git push
 
 git add .

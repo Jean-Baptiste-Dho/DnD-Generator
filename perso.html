@@ -11,10 +11,9 @@
 
 
     <!-- type="module" pour utiliser les export/import, plus obligatoire le defer, mais cumul possible -->
-    <script src="./js/cheminsVariables.js" type="module"></script>
     <script src="./js/render.js" type="module"></script>
     <script src="./js/main.js" type="module"></script>
-    <script src="./js/create.js" type="module"></script>
+    <!-- <script src="./js/create.js" type="module"></script> -->
 
     <title>Character generator</title>
 </head>
@@ -88,9 +87,9 @@
         <div id="nameGenderNameGenerator">
             <div id="genders">
             </div>
-            <div id="name">
+            <div id="nameDiv">
                 <label for="name">Enter your name</label>
-                <input type="text" name="name">
+                <input type="text" name="name" id="nameInput">
             </div>
             <div id="nameGenerator">
                 <label for="genName">Name generator <br> (caracter's gender needed)</label>
@@ -119,7 +118,7 @@
             <input id="autoFillButton" type="button" name="autocompleted" value="Auto-fill">
         </div>
     </div>
-    <section class="block center">
+    <!-- <section class="block center">
         <h1> Here are the fighting technics of your character, according to your selected class and tribe.<br>They
             cannot
             be changed later, so choose wisely !</h1>
@@ -128,12 +127,11 @@
         <h4>The rewards for your training, education and natural skills</h4>
 
         <h2 class="upperCase">Transcendence</h2>
-        <h4>Your true potential</h4>
+        <h4>Unleash your true potential</h4>
 
-    </section>
+    </section> -->
     <section class="block">
         <button id="create" name="create">Create</button>
-        <p id="azerty">plus besoin de chemin pour les id</p>
     </section>
 
 

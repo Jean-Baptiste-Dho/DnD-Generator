@@ -8,6 +8,7 @@ import {
   solLegend,
   skills,
 } from "./variables.js";
+import { verification } from "./verification.js";
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const classPerso = document.querySelector("#listTemplate1");
@@ -26,6 +27,7 @@ export let HandleBonusJobs = () => {
       attribution(10, 0, 1);
       calcSkill();
       handleCalcRemaining();
+      verification();
       break;
 
     case "Ranger":
@@ -33,6 +35,7 @@ export let HandleBonusJobs = () => {
       attribution(10, 2, 3);
       calcSkill();
       handleCalcRemaining();
+      verification();
       break;
 
     case "Loeknir/Völva":
@@ -40,6 +43,7 @@ export let HandleBonusJobs = () => {
       attribution(10, 4, 5);
       calcSkill();
       handleCalcRemaining();
+      verification();
       break;
 
     case "Skald":
@@ -47,6 +51,7 @@ export let HandleBonusJobs = () => {
       attribution(20, 6, 8);
       calcSkill();
       handleCalcRemaining();
+      verification();
       break;
 
     case "Solitaire":
@@ -54,6 +59,7 @@ export let HandleBonusJobs = () => {
       attribution(10, 6, 8);
       calcSkill();
       handleCalcRemaining();
+      verification();
       break;
 
     default:
@@ -62,6 +68,7 @@ export let HandleBonusJobs = () => {
       attribution("", 8);
       calcSkill();
       handleCalcRemaining();
+      verification();
       break;
   }
 };
