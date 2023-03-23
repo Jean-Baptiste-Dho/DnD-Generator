@@ -1,5 +1,5 @@
 git add .
-git commit -m "correction pb de calcul fx autofill. implément des validator encore non fonctionnel"
+git commit -m "correction affichage "NaN" de skills point en "0". implément des validator encore non fonctionnel"
 git push
 
 git add .
