@@ -14,8 +14,6 @@ export const calcSkill = () => {
       calcSkillTarget.innerHTML = total - reste;
     } else {
       reste += classValChc.value + tribValChc.value;
-      console.log(reste);
-      console.log(total - reste);
       calcSkillTarget.innerHTML = total - reste;
       if (total - reste === 0) {
         tl1.removeAttribute("class");

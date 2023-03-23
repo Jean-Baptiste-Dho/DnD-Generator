@@ -62,11 +62,9 @@ export const handleAutoFill = () => {
  */
 const attribution3 = (listCarac, listClass) => {
   for (let i = 0; i <= 5; i++) {
-    // let tribModif = document.querySelector(`#tribVal${listCarac[i]}`);
-    // let classModif = document.querySelector(`#classVal${listCarac[i]}`);
-
+    let tribModif = document.querySelector(`#tribVal${listCarac[i]}`);
     let autofillAttribution = document.querySelector(`#value${listCarac[i]}`);
-    autofillAttribution.value = listClass[i];
-    // }
+
+    autofillAttribution.value = listClass[i] - tribModif.value;
   }
 };

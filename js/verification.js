@@ -26,7 +26,14 @@ export const verification = () => {
   if (listTemplate2.value !== "") {
     validatorTribes = 1;
   }
-
+  console.log(
+    validatorJobs +
+      caracMaxCheck() +
+      caracMinCheck() +
+      validatorName +
+      validatorTot +
+      validatorTribes
+  );
   return (validator =
     validatorJobs +
     caracMaxCheck() +
