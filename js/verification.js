@@ -7,62 +7,78 @@ export const verification = () => {
   let validatorJobs = 0;
   let validatorTribes = 0;
 
+  if (nameInput.value) {
+    validatorName = "0";
+    console.log("validatorName : " + validatorName);
+  } else {
+    validatorName = "n";
+  }
+
+  if (listTemplate1.value !== "") {
+    validatorJobs = "0";
+    console.log("validatorJobs : " + validatorJobs);
+  } else {
+    validatorJobs = "j";
+  }
+
+  if (listTemplate2.value !== "") {
+    validatorTribes = "0";
+    console.log("validatorTribes : " + validatorTribes);
+  } else {
+    validatorTribes = "p";
+  }
+
+  if (calcSkillTarget.innerHTML == "0") {
+    validatorTot = "0";
+    console.log("validatorTot : " + validatorTot);
+  } else {
+    validatorTot = "t";
+  }
+
   caracMaxCheck();
 
   caracMinCheck();
 
-  if (tl1.value == "0") {
-    validatorTot = 1;
-  }
-
-  if (nameInput.value) {
-    validatorName = 1;
-  }
-
-  if (listTemplate1.value !== "") {
-    validatorJobs = 1;
-  }
-
-  if (listTemplate2.value !== "") {
-    validatorTribes = 1;
-  }
-  // console.log(
-  //   validatorJobs +
-  //     caracMaxCheck() +
-  //     caracMinCheck() +
-  //     validatorName +
-  //     validatorTot +
-  //     validatorTribes
-  // );
-  return (validator =
-    validatorJobs +
-    caracMaxCheck() +
-    caracMinCheck() +
+  validator =
     validatorName +
+    validatorJobs +
+    validatorTribes +
     validatorTot +
-    validatorTribes);
+    caracMaxCheck() +
+    caracMinCheck();
+  return validator;
 };
 
 export const alertCheck = (verificateur) => {
-  switch (verificateur) {
-    case 1:
-      alert(
-        "Il y a un problème dans l'attribution de vos points !\nVérifiez les conditions maximales et minimale des points"
-      );
-      break;
-    case 6:
-      alert(
-        "Vous n'avez pas attribué tout vos points, ou vous en avez attribué trop !"
-      );
-      break;
-    case 7:
-      alert(
-        'Tout est valide pour la création de votre avatar ! Vous pouvez cliquez sur "Create"'
-      );
-      break;
-    default:
-      alert("Vous n'avez encore rien fait...");
-      break;
+  console.log(verificateur);
+  let mot = verificateur;
+  let nLetter = mot.indexOf("n");
+  let jLetter = mot.indexOf("j");
+  let tLetter = mot.indexOf("t");
+  let pLetter = mot.indexOf("p");
+  let MLetter = mot.indexOf("M");
+  let mLetter = mot.indexOf("m");
+
+  if (nLetter !== -1) {
+    alert("Veuillez saisir votre nom.");
+  } else if (jLetter !== -1) {
+    alert(
+      'Veuillez saisir une classe.\nSi vous ne souhaitez aucune classe, selectionnez "Solitaire".'
+    );
+  } else if (pLetter !== -1) {
+    alert(
+      'Veuillez saisir un peuple.\nSi vous ne souhaitez appartenir à aucun peuple,\n selectionnez "Apatride".'
+    );
+  } else if (tLetter !== -1) {
+    alert("Veuillez attribuez le nombre correct de point.");
+  } else if (MLetter !== -1) {
+    alert("Une de vos caractéristiques possède trop de point.");
+  } else if (mLetter !== -1) {
+    alert("Une de vos caractéristiques ne possède pas assez de point.");
+  } else {
+    alert(
+      'Vous pouvez valider la création de votre personnage\nen cliquant ur le boutton "Create".'
+    );
   }
 };
 
@@ -79,11 +95,11 @@ const caracMaxCheck = () => {
     if (somme <= maxPt) {
       tl2.removeAttribute("class");
       tl2.classList.add("bonus");
-      validatorMax = 1;
+      validatorMax = "0";
     } else {
       tl2.removeAttribute("class");
       tl2.classList.add("malus");
-      validatorMax = 0;
+      validatorMax = "M";
       break;
     }
   }
@@ -103,11 +119,11 @@ const caracMinCheck = () => {
     if (somme >= minPt) {
       tl3.removeAttribute("class");
       tl3.classList.add("bonus");
-      validatorMin = 1;
+      validatorMin = "0";
     } else {
       tl3.removeAttribute("class");
       tl3.classList.add("malus");
-      validatorMin = 0;
+      validatorMin = "m";
       break;
     }
   }
