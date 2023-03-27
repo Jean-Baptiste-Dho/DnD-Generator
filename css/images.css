@@ -20,7 +20,7 @@
 }
 
 .imgList {
-  max-height: 250px;
+  max-height: 200px;
   margin: auto;
   object-fit: contain;
 }

@@ -7,6 +7,7 @@
 #tribes {
   display: grid;
   grid-template-columns: --num-col;
+  /* -- propLingT from variablesCss*/
   grid-template-rows: var(--propLignT);
   grid-template-areas:
     "ts"

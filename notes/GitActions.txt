@@ -1,5 +1,5 @@
 git add .
-git commit -m "fx 'alertChek' 100% fonctionnelle."
+git commit -m "ajustement de la grid pour images class et ajout de la fx sur la list class"
 git push
 
 git add .

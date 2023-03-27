@@ -22,7 +22,10 @@ for (let i = 0; i < 6; i++) {
   });
 }
 
-listTemplate1.addEventListener("click", HandleBonusJobs);
+listTemplate1.addEventListener("click", () => {
+  HandleBonusJobs();
+  handleImg();
+});
 
 listTemplate2.addEventListener("click", () => {
   HandleBonusTribes();

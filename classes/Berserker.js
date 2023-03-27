@@ -1,0 +1,1 @@
+class Berserker extends Basic {}
